@@ -17,14 +17,13 @@ const IndexPage = props => {
   // getting data
   const { markdownRemark } = data;
   const { frontmatter, html } = markdownRemark;
-  const { descGroup } = frontmatter;
 
   const seo = frontmatter.title;
 
   // returning
   return (
     <Container seo={seo}>
-      <Item html={html} {...frontmatter} {...descGroup} />
+      <Item html={html} {...frontmatter} />
     </Container>
   );
 };
@@ -36,10 +35,6 @@ export const pageQuery = graphql`
       frontmatter {
         date(formatString: "DD/MM/YY")
         title
-        descGroup {
-          desc
-          longdesc
-        }
       }
     }
   }

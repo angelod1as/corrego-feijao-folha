@@ -60,22 +60,23 @@ exports.createPages = async ({ actions, graphql }) => {
   const { createPage } = actions;
 
   // #########
-  // PAGES
+  // GET MENU
   // #########
-  const getHome = () => {
+
+  const getFront = () => {
     return graphql(`
-      {
-        allMarkdownRemark(
-          filter: { fields: { type: { eq: "pages" } } }
-          sort: { order: DESC, fields: frontmatter___date }
-        ) {
+      query {
+        allMarkdownRemark(filter: { frontmatter: { home: { eq: true } } }) {
           edges {
             node {
-              fields {
-                type
-                slug
-                fullPath
+              frontmatter {
+                title
+                menu
+                home
+                createdAt(formatString: "DD.MMM.YYYY - kk:mm", locale: "pt-BR")
+                updatedAt(formatString: "DD.MMM.YYYY - kk:mm", locale: "pt-BR")
               }
+              html
             }
           }
         }
@@ -83,19 +84,50 @@ exports.createPages = async ({ actions, graphql }) => {
     `);
   };
 
-  const homeQl = await getHome();
+  const front = await getFront();
 
-  if (homeQl.errors) throw new Error(homeQl.errors);
+  if (front.errors) throw new Error(front.errors);
+
+  // #########
+  // PAGES
+  // #########
+  const getPages = () => {
+    return graphql(`
+      query {
+        allMarkdownRemark(filter: { frontmatter: { home: { ne: true } } }) {
+          edges {
+            node {
+              frontmatter {
+                title
+                menu
+                home
+                createdAt(formatString: "DD.MMM.YYYY - kk:mm", locale: "pt-BR")
+                updatedAt(formatString: "DD.MMM.YYYY - kk:mm", locale: "pt-BR")
+              }
+              html
+            }
+          }
+        }
+      }
+    `);
+  };
+
+  const pages = await getPages();
+
+  if (pages.errors) throw new Error(pages.errors);
 
   // creating main home page
   createPage({
     path: '/',
     component: path.resolve('src/templates/home.js'),
-    context: {},
+    context: {
+      front,
+      pages,
+    },
   });
 
   // creating each sub pages
-  homeQl.data.allMarkdownRemark.edges.forEach(({ node }) => {
+  pages.data.allMarkdownRemark.edges.forEach(({ node }) => {
     createPage({
       path: node.fields.fullPath,
       component: path.resolve(`src/templates/item.js`),

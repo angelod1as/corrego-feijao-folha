@@ -3,7 +3,8 @@ import PropTypes from 'prop-types';
 import Fade from 'react-reveal/Fade';
 
 const Main = ({ children }) => {
-  return <Fade>{children}</Fade>;
+  // return <Fade>{children}</Fade>;
+  return children;
 };
 
 Main.propTypes = {
