@@ -1,65 +1,45 @@
 import React from 'react';
-import { graphql } from 'gatsby';
 import PropTypes from 'prop-types';
 
-import Container from '.';
+import Container from '../layouts/container';
+// import Back from '../components/back';
 
-import Item from '../fragments/Item';
+import Front from '../layouts/front';
+import Page from '../layouts/page';
 
-const IndexPage = props => {
-  // getting last page url
-  const {
-    data,
-    location: { state },
-  } = props;
-  const from = state ? state.from || null : null;
+const Item = ({ pageContext }) => {
+  const { front, node } = pageContext;
+  if (front) {
+    const content = pageContext.front.data.allMarkdownRemark.edges[0].node;
+    const pages = pageContext.pages.data.allMarkdownRemark;
+    return (
+      <Container seo="">
+        <Front content={content} pages={pages} />
+      </Container>
+    );
+  }
 
-  // getting data
-  const { markdownRemark } = data;
-  const { frontmatter, html } = markdownRemark;
-
-  const seo = frontmatter.title;
-
-  // returning
   return (
-    <Container seo={seo}>
-      <Item html={html} {...frontmatter} />
+    <Container seo="">
+      <Page content={node} />
     </Container>
   );
 };
 
-export const pageQuery = graphql`
-  query($path: String!) {
-    markdownRemark(fields: { fullPath: { eq: $path } }) {
-      html
-      frontmatter {
-        date(formatString: "DD/MM/YY")
-        title
-      }
-    }
-  }
-`;
-
-IndexPage.propTypes = {
-  location: PropTypes.shape({
-    state: PropTypes.shape({
-      from: PropTypes.string,
-    }),
+Item.propTypes = {
+  pageContext: PropTypes.shape({
+    front: PropTypes.shape(),
+    pages: PropTypes.shape(),
+    node: PropTypes.shape(),
   }),
-  data: PropTypes.shape({
-    markdownRemark: PropTypes.shape({
-      frontmatter: PropTypes.shape(),
-      html: PropTypes.string,
-    }),
-  }).isRequired,
 };
 
-IndexPage.defaultProps = {
-  location: {
-    state: {
-      from: null,
-    },
+Item.defaultProps = {
+  pageContext: {
+    front: null,
+    pages: null,
+    node: null,
   },
 };
 
-export default IndexPage;
+export default Item;

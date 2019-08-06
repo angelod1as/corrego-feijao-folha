@@ -26,7 +26,6 @@ const Back = ({ to }) => {
   return (
     <BackLink>
       <Link direction="right" className="bg" to={to}>
-        {/* <Arrow /> */}
         back
       </Link>
     </BackLink>

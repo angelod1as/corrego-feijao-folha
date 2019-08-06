@@ -6,46 +6,9 @@ exports.onCreateNode = async ({ node, getNode, actions }) => {
 
   // select only markdown
   if (node.internal.type === `MarkdownRemark`) {
-    // Making type
-    const makeType = () => {
-      const split = node.fileAbsolutePath.split('content/')[1];
-      let type = '';
-      if (split.indexOf('/') > 0) {
-        [type] = split.split('/');
-      } else {
-        type = 'pages';
-      }
-      return type;
-    };
-
-    const makeSlug = () => {
-      const split = node.fileAbsolutePath.split('content/')[1];
-      let slug = '';
-      if (split.indexOf('/') > 0) {
-        [, slug] = split.split('/');
-      } else {
-        slug = split;
-      }
-      return slug.replace('.mdx', '').replace('.md', '');
-    };
-
-    // create slugs
-    await createNodeField({
-      node,
-      name: `slug`,
-      value: makeSlug(),
-    });
-
-    // Making type
-    await createNodeField({
-      node,
-      name: `type`,
-      value: makeType(),
-    });
-
     const basePath = `content`;
 
-    // create fullPaths
+    // create fullPaths for later
     const fullPath = createFilePath({ node, getNode, basePath });
 
     await createNodeField({
@@ -60,7 +23,7 @@ exports.createPages = async ({ actions, graphql }) => {
   const { createPage } = actions;
 
   // #########
-  // GET MENU
+  // FRONT PAGE
   // #########
 
   const getFront = () => {
@@ -105,6 +68,9 @@ exports.createPages = async ({ actions, graphql }) => {
                 updatedAt(formatString: "DD.MMM.YYYY - kk:mm", locale: "pt-BR")
               }
               html
+              fields {
+                fullPath
+              }
             }
           }
         }
@@ -119,7 +85,7 @@ exports.createPages = async ({ actions, graphql }) => {
   // creating main home page
   createPage({
     path: '/',
-    component: path.resolve('src/templates/home.js'),
+    component: path.resolve('src/templates/item.js'),
     context: {
       front,
       pages,
@@ -131,7 +97,9 @@ exports.createPages = async ({ actions, graphql }) => {
     createPage({
       path: node.fields.fullPath,
       component: path.resolve(`src/templates/item.js`),
-      context: {},
+      context: {
+        node,
+      },
     });
   });
 };

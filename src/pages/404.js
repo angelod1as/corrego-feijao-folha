@@ -1,20 +1,14 @@
 import React from 'react';
 // import PropTypes from 'prop-types';
 
-import Container from '../templates';
-
-import Main from '../layouts/Main';
-import Sidebar from '../components/Sidebar';
+import Container from '../layouts/container';
 
 const seo = 'Erro 404';
 
 const IndexPage = () => {
   return (
     <Container seo={seo}>
-      <Sidebar back="/" title="Erro 404" />
-      <Main>
-        <h1>Oops, acho que você chegou em uma página que não existe!</h1>
-      </Main>
+      <h1>Oops, acho que você chegou em uma página que não existe!</h1>
     </Container>
   );
 };
