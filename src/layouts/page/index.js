@@ -2,27 +2,31 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import parse from 'html-react-parser';
-import uuid from 'uuid/v1';
 
+import { parseDates, parseNames } from '../../components/parser';
 import Video from '../../components/video';
+import More from './more';
+import FigureCaption from '../../components/figure-caption';
 
 const Main = styled.main`
-  max-width: ${p => p.theme.width.width};
+  max-width: ${p => p.theme.width.full};
   margin: 0 auto;
+  & > * {
+    max-width: ${p => p.theme.width.width};
+    margin: 0 auto;
+    padding: 0 5px;
+  }
 `;
-
 const Back = styled.a`
-  padding: 0;
+  margin: 0 auto;
+  display: block;
 `;
-const Title = styled.h1`
-  padding: 0;
-`;
+const Title = styled.h1``;
 const Lead = styled.p`
-  padding: 0;
   font-size: 1.5em;
 `;
 const Dates = styled.div`
-  margin: 20px 0;
+  margin: 20px auto;
   p {
     font-family: ${p => p.theme.font.display};
     font-size: 0.95em;
@@ -41,7 +45,13 @@ const Names = styled.div`
   }
 `;
 const Html = styled.div`
-  margin-top: 30px;
+  max-width: ${p => p.theme.width.full};
+  margin: 30px auto;
+  & > * {
+    max-width: ${p => p.theme.width.width};
+    margin: 0 auto;
+  }
+
   .location {
     font-family: ${p => p.theme.font.display};
     text-transform: uppercase;
@@ -51,45 +61,15 @@ const Html = styled.div`
   }
 
   .video {
-    margin: 30px 0;
+    margin: 50px auto;
+    max-width: ${p => p.theme.width.max};
+  }
+
+  figure {
+    margin: 50px auto;
+    max-width: ${p => p.theme.width.max};
   }
 `;
-
-const parseNames = names => {
-  const result = names.map(name => {
-    if (name.includes(':')) {
-      const split = name.split(':');
-      return (
-        <p key={uuid()}>
-          {split[1]} <span>({split[0]})</span>
-        </p>
-      );
-    }
-    return <p key={uuid()}>{name}</p>;
-  });
-  return result;
-};
-
-const parseDates = (created, updated) => {
-  const fix = date => {
-    return date
-      .toLowerCase()
-      .replace(' - ', ' às ')
-      .replace(':', 'h');
-  };
-
-  const result = [];
-  if (created) {
-    result.push(<p key={uuid()}>{fix(created)}</p>);
-  }
-  if (created && updated) {
-    result.push(<p key={uuid()}>Atualizado: {fix(updated)}</p>);
-  } else if (updated) {
-    result.push(<p key={uuid()}>Última atualização: {fix(updated)}</p>);
-  }
-
-  return result;
-};
 
 const Page = ({ content }) => {
   const {
@@ -104,6 +84,10 @@ const Page = ({ content }) => {
           <Video title={domNode.attribs.title || 'Vídeo'} id={domNode.attribs['data-video']} />
         );
       }
+      if (domNode.attribs && domNode.attribs.alt) {
+        return <FigureCaption attribs={domNode.attribs} />;
+      }
+
       return domNode;
     },
   };
@@ -115,6 +99,7 @@ const Page = ({ content }) => {
       <Dates>{parseDates(createdAt, updatedAt)}</Dates>
       <Names>{parseNames(names)}</Names>
       <Html>{parse(html, parseOptions)}</Html>
+      <More title={title} />
     </Main>
   );
 };

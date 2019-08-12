@@ -18,13 +18,15 @@ const GlobalStyle = createGlobalStyle`
 
   body {
     font-family: ${p => p.theme.font.text};
+    -webkit-font-smoothing: antialiased
     /* font-family: Folha Grafico,Helvetica,Arial,sans-serif */
   }
   * {
     box-sizing: border-box;
+    -webkit-font-smoothing: antialiased
   }
 
-  p, a, li, h1, h2, h3, h4 {
+  p, a, li, h1, h2, h3, h4, figcaption {
     font-family: ${p => p.theme.font.text};
     font-size: 20px;
     font-weight: 300;
@@ -32,6 +34,11 @@ const GlobalStyle = createGlobalStyle`
     padding: 10px 0;
     margin: 0 auto;
     -webkit-font-smoothing: antialiased
+  }
+
+  img, figure {
+    width: 100%;
+    height: auto;
   }
 
   h1 {
