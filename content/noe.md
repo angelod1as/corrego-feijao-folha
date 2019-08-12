@@ -5,7 +5,6 @@ person: true
 opening: ''
 title: Noé
 lead: Linha fina Lorem ipsum dolor sit amet
-menu: ''
 names:
   - 'Gabriel Zambon'
   - 'Tuane Aguiar'

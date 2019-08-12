@@ -1,6 +1,10 @@
 import React from 'react';
 import uuid from 'uuid/v1';
 
+import Video from './video';
+import Mosaic from './mosaic';
+import FigureCaption from './figure-caption';
+
 export const parseNames = names => {
   const result = names.map(name => {
     if (name.includes(':')) {
@@ -34,4 +38,20 @@ export const parseDates = (created, updated) => {
   }
 
   return result;
+};
+
+export const parseOptions = {
+  replace: domNode => {
+    if (domNode.attribs && domNode.attribs.class === 'video') {
+      return <Video title={domNode.attribs.title || 'Vídeo'} id={domNode.attribs['data-video']} />;
+    }
+    if (domNode.attribs && domNode.attribs.alt) {
+      return <FigureCaption attribs={domNode.attribs} />;
+    }
+    if (domNode.attribs && domNode.attribs.class === 'mosaic') {
+      return <Mosaic />;
+    }
+
+    return domNode;
+  },
 };

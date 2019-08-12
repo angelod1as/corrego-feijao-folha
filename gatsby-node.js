@@ -34,8 +34,8 @@ exports.createPages = async ({ actions, graphql }) => {
             node {
               frontmatter {
                 title
-                menu
-                home
+                lead
+                names
                 createdAt(formatString: "DD.MMM.YYYY - kk:mm", locale: "pt-BR")
                 updatedAt(formatString: "DD.MMM.YYYY - kk:mm", locale: "pt-BR")
               }
@@ -62,7 +62,7 @@ exports.createPages = async ({ actions, graphql }) => {
             node {
               frontmatter {
                 title
-                menu
+                opening
                 home
                 lead
                 names

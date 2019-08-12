@@ -1,16 +1,40 @@
 import React from 'react';
-import styled from 'styled-components';
+import PropTypes from 'prop-types';
+import parse from 'html-react-parser';
 
-// import { Container } from './styles';
+import { parseDates, parseNames, parseOptions } from '../../components/parser';
+import { Main, Title, Lead, Dates, Names, Html } from '../../components/styles';
 
-export const Main = styled.main`
-  max-width: ${p => p.theme.width.full};
-  margin: 0 auto;
-`;
+const Front = ({
+  content: {
+    frontmatter: { createdAt, lead, names, title, updatedAt },
+    html,
+  },
+  pages,
+}) => {
+  return (
+    <Main>
+      <Title>{title}</Title>
+      <Lead>{lead}</Lead>
+      <Dates>{parseDates(createdAt, updatedAt)}</Dates>
+      <Names>{parseNames(names)}</Names>
+      <Html>{parse(html, parseOptions)}</Html>
+    </Main>
+  );
+};
 
-const Front = ({ content, pages }) => {
-  console.log(content);
-  return <Main>front</Main>;
+Front.propTypes = {
+  content: PropTypes.shape({
+    frontmatter: PropTypes.shape({
+      createdAt: PropTypes.string,
+      lead: PropTypes.string,
+      names: PropTypes.arrayOf(PropTypes.string),
+      title: PropTypes.string,
+      updatedAt: PropTypes.string,
+    }),
+    html: PropTypes.string,
+  }).isRequired,
+  pages: PropTypes.shape().isRequired,
 };
 
 export default Front;
