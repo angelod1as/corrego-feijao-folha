@@ -17,44 +17,45 @@ const GlobalStyle = createGlobalStyle`
 
 
   body {
-    /* @import url('https://fonts.googleapis.com/css?family=Montserrat+Alternates:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap'); */
-    font-family: 'Montserrat', sans-serif;
+    font-family: ${p => p.theme.font.text};
+    /* font-family: Folha Grafico,Helvetica,Arial,sans-serif */
   }
   * {
     box-sizing: border-box;
   }
 
-  p, ul, li {
-    font-family: Montserrat, sans-serif;
-    font-size: 18px;
+  p, a, li, h1, h2, h3, h4 {
+    font-family: ${p => p.theme.font.text};
+    font-size: 20px;
     font-weight: 300;
-    line-height: 1.4em;
-    margin-bottom: 1em;
+    line-height: 1.5em;
+    padding: 10px 0;
+    margin: 0 auto;
+    -webkit-font-smoothing: antialiased
   }
 
   h1 {
-    line-height: 1.3em;
+    font-size: 4em;
   }
 
   h2 {
-    font-size: 1.5em;
+    font-size: 2em;
   }
 
   a {
+    cursor: pointer;
     display: inline-block;
     color: ${p => p.theme.color.color};
-    font-weight: 700;
     transition: color .2s, transform .2s;
     text-decoration: none;
     &:hover {
-      transform: skewX(-15deg);
-      color: ${p => p.theme.color.black};
+      color: ${p => p.theme.color.white};
     }
   }
   &.bg {
     color: ${p => p.theme.color.white};
     &:hover {
-      color: ${p => p.theme.color.gray};
+      color: ${p => p.theme.color.color};
     }
   }
 
@@ -64,27 +65,6 @@ const GlobalStyle = createGlobalStyle`
       pointer-events: none;
     }
   }
-
-  .sidebar {
-    max-width: 300px;
-  }
-
-  /* Changing prism styles */
-  .gatsby-highlight {
-    margin: 50px 0;
-  }
-  pre[class*="language-"] {
-      &:before,
-      &:after {
-        content: none;
-      }
-      & > code {
-        border-color: ${p => p.theme.color.color};
-        box-shadow: none;
-        background-color: ${p => p.theme.color.white};
-        background-image: none;
-      }
-    }
 `;
 
 export default GlobalStyle;

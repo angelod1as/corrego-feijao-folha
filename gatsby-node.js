@@ -64,6 +64,8 @@ exports.createPages = async ({ actions, graphql }) => {
                 title
                 menu
                 home
+                lead
+                names
                 createdAt(formatString: "DD.MMM.YYYY - kk:mm", locale: "pt-BR")
                 updatedAt(formatString: "DD.MMM.YYYY - kk:mm", locale: "pt-BR")
               }
@@ -85,7 +87,7 @@ exports.createPages = async ({ actions, graphql }) => {
   // creating main home page
   createPage({
     path: '/',
-    component: path.resolve('src/templates/item.js'),
+    component: path.resolve('src/templates/template.js'),
     context: {
       front,
       pages,
@@ -96,7 +98,7 @@ exports.createPages = async ({ actions, graphql }) => {
   pages.data.allMarkdownRemark.edges.forEach(({ node }) => {
     createPage({
       path: node.fields.fullPath,
-      component: path.resolve(`src/templates/item.js`),
+      component: path.resolve(`src/templates/template.js`),
       context: {
         node,
       },

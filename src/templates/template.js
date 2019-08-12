@@ -7,7 +7,7 @@ import Container from '../layouts/container';
 import Front from '../layouts/front';
 import Page from '../layouts/page';
 
-const Item = ({ pageContext }) => {
+const Template = ({ pageContext }) => {
   const { front, node } = pageContext;
   if (front) {
     const content = pageContext.front.data.allMarkdownRemark.edges[0].node;
@@ -26,7 +26,7 @@ const Item = ({ pageContext }) => {
   );
 };
 
-Item.propTypes = {
+Template.propTypes = {
   pageContext: PropTypes.shape({
     front: PropTypes.shape(),
     pages: PropTypes.shape(),
@@ -34,7 +34,7 @@ Item.propTypes = {
   }),
 };
 
-Item.defaultProps = {
+Template.defaultProps = {
   pageContext: {
     front: null,
     pages: null,
@@ -42,4 +42,4 @@ Item.defaultProps = {
   },
 };
 
-export default Item;
+export default Template;

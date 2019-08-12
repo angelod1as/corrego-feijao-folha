@@ -9,19 +9,33 @@ import SEO from '../components/seo';
 
 const theme = {
   color: {
-    color: '#19006A',
+    color: '#fba67b',
     white: '#F4F4F4',
     black: '#333333',
     gray: '#CCCCCC',
     darkgray: '#A9A9A9',
+    bg: '#140000',
+    gradient: 'linear-gradient(to bottom, #191919 0%, #140000 100% )',
   },
   font: {
-    display: 'Montserrat Alternates',
-    text: 'Montserrat',
+    display: 'Folha Grafico,Helvetica Neue,Helvetica,Arial,sans-serif',
+    text: 'Folha Texto,Georgia,Times New Roman,serif;',
+  },
+  width: {
+    full: '100%',
+    width: '630px',
   },
 };
 
-const Main = styled.div``;
+const Main = styled.div`
+  background: #191919; /* Old browsers */
+  background: ${p => p.theme.color.gradient};
+  color: ${p => p.theme.color.white};
+  height: auto;
+  min-height: 100%;
+
+  padding: 50px 0;
+`;
 
 const Container = ({ children, seo }) => {
   return (
