@@ -1,36 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-// import AniLink from 'gatsby-plugin-transition-link/AniLink';
 import { Link } from 'gatsby';
 import { withTheme } from 'styled-components';
 
 const CustomLink = props => {
-  const {
-    children,
-    className,
-    // direction,
-    // color,
-    to,
-    from,
-    // theme
-  } = props;
+  const { children, to } = props;
 
-  // const transition = false;
-  // console.log('link', from);
-
-  // if (transition) {
-  //   const mainColor = theme.color.color;
-  //   return (
-  //     <AniLink cover direction={direction} className={className} bg={color || mainColor} to={to}>
-  //       {children}
-  //     </AniLink>
-  //   );
-  // }
-  return (
-    <Link to={to} className={className} state={{ from }}>
-      {children}
-    </Link>
-  );
+  return <Link to={to}>{children}</Link>;
 };
 
 CustomLink.propTypes = {
@@ -41,15 +17,15 @@ CustomLink.propTypes = {
     }),
   }).isRequired,
   to: PropTypes.string.isRequired,
-  from: PropTypes.string,
-  className: PropTypes.string,
+  // from: PropTypes.string,
+  // className: PropTypes.string,
   // direction: PropTypes.string,
   // color: PropTypes.string,
 };
 
 CustomLink.defaultProps = {
-  className: null,
-  from: null,
+  // className: null,
+  // from: null,
   // color: null,
   // direction: 'right',
 };
