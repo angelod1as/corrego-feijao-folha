@@ -19,7 +19,7 @@ const Front = ({
       <Lead>{lead}</Lead>
       {createdAt || updatedAt ? <Dates>{parseDates(createdAt, updatedAt)}</Dates> : ''}
       {names && names.length > 0 ? <Names>{parseNames(names)}</Names> : ''}
-      <Html>{parse(html, parseOptions({ mosaic: pages.edges }))}</Html>
+      <Html>{parse(html, parseOptions({ mosaic: pages, home: true }))}</Html>
     </Main>
   );
 };
@@ -35,7 +35,7 @@ Front.propTypes = {
     }),
     html: PropTypes.string,
   }).isRequired,
-  pages: PropTypes.shape().isRequired,
+  pages: PropTypes.arrayOf(PropTypes.shape()).isRequired,
 };
 
 export default Front;

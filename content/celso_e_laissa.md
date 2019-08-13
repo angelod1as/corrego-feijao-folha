@@ -5,10 +5,7 @@ person: true
 opening: https://via.placeholder.com/500
 title: Celso e Laíssa
 lead: Linha fina Lorem ipsum dolor sit amet
-names:
-  - 'Gabriel Zambon'
-  - 'Tuane Aguiar'
-  - 'desenvolvimento: Angelo Dias'
+order: 4
 ---
 
 <div class="infos">
@@ -18,8 +15,6 @@ names:
 - Nascimento: 2000 (Celso) e 2001 (Laíssa)
 
 </div>
-
-<span class="location">Córrego do Feijão (MG)</span>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
 
 <div class="video" title="Título descritivo do vídeo para acessibilidade" data-video="zeKT_YFuU0o"></div>
 

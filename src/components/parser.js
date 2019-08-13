@@ -17,12 +17,39 @@ export const parseOptions = props => {
             <Video title={domNode.attribs.title || 'Vídeo'} id={domNode.attribs['data-video']} />
           );
         }
-        if (domNode.attribs.class === 'mosaic' && props.mosaic) {
-          const { mosaic } = props;
-          return <Mosaic content={mosaic} />;
+        if (domNode.attribs.class === 'mosaic' && props && props.mosaic) {
+          const { mosaic, home } = props;
+          return <Mosaic content={mosaic} home={home} />;
         }
-        if (domNode.attribs.class === 'info') {
-          console.log(domNode);
+        if (domNode.attribs.class === 'infos') {
+          return (
+            <div className="infos">
+              {domNode.children.map(each => {
+                if (each.name === 'ul') {
+                  return (
+                    <ul key={uuid()}>
+                      {each.children.map(item => {
+                        if (item.name === 'li') {
+                          if (item.children[0].data.includes(':')) {
+                            const split = item.children[0].data.split(':');
+                            return (
+                              <li key={uuid()}>
+                                <span>{split[0]}</span>
+                                {split[1]}
+                              </li>
+                            );
+                          }
+                          return <li>{item.children[0].data}</li>;
+                        }
+                        return null;
+                      })}
+                    </ul>
+                  );
+                }
+                return null;
+              })}
+            </div>
+          );
         }
         return domNode;
       }

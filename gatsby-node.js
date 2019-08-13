@@ -89,8 +89,7 @@ exports.createPages = async ({ actions, graphql }) => {
     path: '/',
     component: path.resolve('src/templates/template.js'),
     context: {
-      front,
-      pages,
+      front: true,
     },
   });
 
@@ -100,7 +99,8 @@ exports.createPages = async ({ actions, graphql }) => {
       path: node.fields.fullPath,
       component: path.resolve(`src/templates/template.js`),
       context: {
-        node,
+        fullPath: node.fields.fullPath,
+        front: false,
       },
     });
   });

@@ -6,10 +6,16 @@ import uuid from 'uuid/v1';
 import Link from './link';
 
 const Outer = styled.div`
-  max-width: ${p => p.theme.width.max} !important;
-  margin: 100px auto !important;
+  &.home {
+    max-width: ${p => p.theme.width.max} !important;
+    margin: 100px auto !important;
+  }
+  &.page {
+  }
   padding: 0;
+`;
 
+const Inner = styled.div`
   display: grid;
   grid-gap: 10px;
   grid-template-columns: repeat(3, 1fr);
@@ -43,7 +49,7 @@ const Name = styled.h2`
   font-size: 1.5em;
 `;
 
-const Mosaic = ({ content }) => {
+const Mosaic = ({ content, home }) => {
   const inner = content.map(each => {
     const {
       frontmatter: { title, opening },
@@ -60,7 +66,19 @@ const Mosaic = ({ content }) => {
     );
   });
 
-  return <Outer>{inner}</Outer>;
+  if (home) {
+    return (
+      <Outer className="home">
+        <Inner>{inner}</Inner>
+      </Outer>
+    );
+  }
+  return (
+    <Outer className="page">
+      <h2>Conheça outras histórias</h2>
+      <Inner>{inner}</Inner>
+    </Outer>
+  );
 };
 
 Mosaic.propTypes = {
@@ -75,6 +93,11 @@ Mosaic.propTypes = {
       }),
     })
   ).isRequired,
+  home: PropTypes.bool,
+};
+
+Mosaic.defaultProps = {
+  home: false,
 };
 
 export default Mosaic;

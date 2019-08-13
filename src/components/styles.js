@@ -14,6 +14,7 @@ export const Title = styled.h1``;
 
 export const Lead = styled.p`
   font-size: 1.5em;
+  margin-bottom: 30px;
 `;
 
 export const Dates = styled.div`
@@ -63,5 +64,20 @@ export const Html = styled.div`
   figure {
     margin: 50px auto;
     max-width: ${p => p.theme.width.max};
+  }
+
+  .infos {
+    margin: 30px auto;
+    ul {
+      li {
+        margin: 0;
+        padding: 0;
+        span {
+          font-weight: bold;
+          font-size: 0.85em;
+          padding-right: 5px;
+        }
+      }
+    }
   }
 `;
