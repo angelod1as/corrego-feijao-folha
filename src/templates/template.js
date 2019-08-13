@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
+import Fade from 'react-reveal/Fade';
 
 import Container from '../layouts/container';
 // import Back from '../components/back';
@@ -57,7 +58,9 @@ const Template = ({ pageContext, data }) => {
     const content = home.edges[0].node;
     return (
       <Container seo="">
-        <Front content={content} pages={pages} />
+        <Fade>
+          <Front content={content} pages={pages} />
+        </Fade>
       </Container>
     );
   }
@@ -69,7 +72,9 @@ const Template = ({ pageContext, data }) => {
     });
     return (
       <Container seo="">
-        <Page content={node} pages={pages} />
+        <Fade>
+          <Page content={node} pages={pages} />
+        </Fade>
       </Container>
     );
   }

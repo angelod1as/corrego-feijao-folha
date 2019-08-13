@@ -15,7 +15,6 @@ const GlobalStyle = createGlobalStyle`
     height: 100%;
   }
 
-
   body {
     font-family: ${p => p.theme.font.text};
     -webkit-font-smoothing: antialiased

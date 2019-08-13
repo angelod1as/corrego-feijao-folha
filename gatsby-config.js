@@ -10,6 +10,7 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-catch-links`,
     `gatsby-plugin-styled-components`,
+    'gatsby-plugin-transition-link',
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -68,8 +69,6 @@ module.exports = {
         },
       },
     },
-    // `gatsby-plugin-netlify-cms`,
-    'gatsby-plugin-transition-link',
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
