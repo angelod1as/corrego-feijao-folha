@@ -8,19 +8,24 @@ import FigureCaption from './figure-caption';
 export const parseOptions = props => {
   return {
     replace: domNode => {
-      if (domNode.attribs && domNode.attribs.class === 'video') {
-        return (
-          <Video title={domNode.attribs.title || 'Vídeo'} id={domNode.attribs['data-video']} />
-        );
+      if (domNode.attribs) {
+        if (domNode.attribs.alt) {
+          return <FigureCaption attribs={domNode.attribs} />;
+        }
+        if (domNode.attribs.class === 'video') {
+          return (
+            <Video title={domNode.attribs.title || 'Vídeo'} id={domNode.attribs['data-video']} />
+          );
+        }
+        if (domNode.attribs.class === 'mosaic' && props.mosaic) {
+          const { mosaic } = props;
+          return <Mosaic content={mosaic} />;
+        }
+        if (domNode.attribs.class === 'info') {
+          console.log(domNode);
+        }
+        return domNode;
       }
-      if (domNode.attribs && domNode.attribs.alt) {
-        return <FigureCaption attribs={domNode.attribs} />;
-      }
-      if (domNode.attribs && domNode.attribs.class === 'mosaic' && props.mosaic) {
-        const { mosaic } = props;
-        return <Mosaic content={mosaic} />;
-      }
-
       return domNode;
     },
   };
