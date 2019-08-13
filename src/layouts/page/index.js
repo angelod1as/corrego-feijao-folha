@@ -5,7 +5,8 @@ import parse from 'html-react-parser';
 import { parseDates, parseNames, parseOptions } from '../../components/parser';
 import More from './more';
 
-import { Main, Back, Title, Lead, Dates, Names, Html } from '../../components/styles';
+import Back from '../../components/back';
+import { Main, Title, Lead, Dates, Names, Html } from '../../components/styles';
 
 const Page = ({ content }) => {
   const {
@@ -15,13 +16,13 @@ const Page = ({ content }) => {
 
   return (
     <Main>
-      <Back>{'<'} Córrego do Feijão</Back>
+      <Back to="/" />
       <Title>{title}</Title>
       <Lead>{lead}</Lead>
-      <Dates>{parseDates(createdAt, updatedAt)}</Dates>
-      <Names>{parseNames(names)}</Names>
-      <Html>{parse(html, parseOptions)}</Html>
-      <More title={title} />
+      {createdAt || updatedAt ? <Dates>{parseDates(createdAt, updatedAt)}</Dates> : ''}
+      {names && names.length > 0 ? <Names>{parseNames(names)}</Names> : ''}
+      <Html>{parse(html, parseOptions())}</Html>
+      {/* <More title={title} /> */}
     </Main>
   );
 };

@@ -1,15 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import Link from './Link';
+import Link from './link';
 
 const BackLink = styled.div`
   a {
-    padding-left: 20px;
+    padding: 0 0 0 20px;
     position: relative;
     &:before {
       content: '‹';
-      top: -6px;
+      top: -2px;
       left: 0;
       position: absolute;
       font-size: 1.5em;
@@ -26,7 +26,7 @@ const Back = ({ to }) => {
   return (
     <BackLink>
       <Link direction="right" className="bg" to={to}>
-        back
+        Córrego do Feijão
       </Link>
     </BackLink>
   );

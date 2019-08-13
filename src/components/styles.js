@@ -10,11 +10,6 @@ export const Main = styled.main`
   }
 `;
 
-export const Back = styled.a`
-  margin: 0 auto;
-  display: block;
-`;
-
 export const Title = styled.h1``;
 
 export const Lead = styled.p`
@@ -48,6 +43,8 @@ export const Html = styled.div`
   & > * {
     max-width: ${p => p.theme.width.width};
     margin: 0 auto;
+    padding-left: 5px;
+    padding-right: 5px;
   }
 
   .location {

@@ -21,6 +21,7 @@ const GlobalStyle = createGlobalStyle`
     -webkit-font-smoothing: antialiased
     /* font-family: Folha Grafico,Helvetica,Arial,sans-serif */
   }
+
   * {
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased
@@ -39,6 +40,7 @@ const GlobalStyle = createGlobalStyle`
   img, figure {
     width: 100%;
     height: auto;
+    display: block;
   }
 
   h1 {

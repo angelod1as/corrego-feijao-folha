@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import parse from 'html-react-parser';
+import styled from 'styled-components';
 
 import { parseDates, parseNames, parseOptions } from '../../components/parser';
 import { Main, Title, Lead, Dates, Names, Html } from '../../components/styles';
@@ -16,9 +17,9 @@ const Front = ({
     <Main>
       <Title>{title}</Title>
       <Lead>{lead}</Lead>
-      <Dates>{parseDates(createdAt, updatedAt)}</Dates>
-      <Names>{parseNames(names)}</Names>
-      <Html>{parse(html, parseOptions)}</Html>
+      {createdAt || updatedAt ? <Dates>{parseDates(createdAt, updatedAt)}</Dates> : ''}
+      {names && names.length > 0 ? <Names>{parseNames(names)}</Names> : ''}
+      <Html>{parse(html, parseOptions({ mosaic: pages.edges }))}</Html>
     </Main>
   );
 };
