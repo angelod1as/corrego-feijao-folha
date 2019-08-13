@@ -57,7 +57,10 @@ exports.createPages = async ({ actions, graphql }) => {
   const getPages = () => {
     return graphql(`
       query {
-        allMarkdownRemark(filter: { frontmatter: { home: { ne: true } } }) {
+        allMarkdownRemark(
+          filter: { frontmatter: { person: { eq: true } } }
+          sort: { fields: frontmatter___order, order: ASC }
+        ) {
           edges {
             node {
               frontmatter {

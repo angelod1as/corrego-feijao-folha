@@ -39,7 +39,7 @@ export const parseOptions = props => {
                               </li>
                             );
                           }
-                          return <li>{item.children[0].data}</li>;
+                          return <li key={uuid()}>{item.children[0].data}</li>;
                         }
                         return null;
                       })}

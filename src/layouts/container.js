@@ -15,7 +15,7 @@ const theme = {
     gray: '#CCCCCC',
     darkgray: '#A9A9A9',
     bg: '#140000',
-    gradient: 'linear-gradient(to bottom, #191919 0%, #140000 100% )',
+    gradient: 'linear-gradient(to bottom, #191919 0%, #120000 100% )',
   },
   font: {
     display: 'Folha Grafico,Helvetica Neue,Helvetica,Arial,sans-serif',

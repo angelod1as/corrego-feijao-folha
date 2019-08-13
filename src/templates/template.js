@@ -24,7 +24,10 @@ export const query = graphql`
         }
       }
     }
-    others: allMarkdownRemark(filter: { frontmatter: { home: { ne: true } } }) {
+    others: allMarkdownRemark(
+      filter: { frontmatter: { person: { eq: true } } }
+      sort: { fields: frontmatter___order, order: ASC }
+    ) {
       edges {
         node {
           frontmatter {
