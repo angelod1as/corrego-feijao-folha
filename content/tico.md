@@ -2,7 +2,7 @@
 createdAt: 2019-07-05T20:41:34.954Z
 updatedAt: 2019-07-06T20:41:34.954Z
 person: true
-opening: https://via.placeholder.com/500
+opening: './thumbs/tico.webp'
 title: Tico
 lead: Linha fina Lorem ipsum dolor sit amet
 order: 2

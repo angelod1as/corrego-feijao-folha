@@ -2,7 +2,7 @@
 createdAt: 2019-07-05T20:41:34.954Z
 updatedAt: 2019-07-06T20:41:34.954Z
 person: true
-opening: https://via.placeholder.com/500
+opening: './thumbs/carmem.webp'
 title: Carmem
 lead: Linha fina Lorem ipsum dolor sit amet
 order: 1
@@ -21,7 +21,7 @@ order: 1
 
 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
 
-<div class="video" title="Título descritivo do vídeo para acessibilidade" data-video="zUAToh4hQGA"></div>
+<div class="video" data-size="small" title="Título descritivo do vídeo para acessibilidade" data-video="zUAToh4hQGA"></div>
 
 citações: 
 "se a vale sair daqui o córrego do feijão acaba ué."

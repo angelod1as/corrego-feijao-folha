@@ -4,18 +4,26 @@ import PropTypes from 'prop-types';
 
 import sizes from './breakpoints';
 
-const Video = ({ id, title }) => {
-  const options = 'showinfo=0&modestbranding=0';
+const Video = ({ id, title, size }) => {
+  const options = '';
 
   const Wrapper = styled.div`
     position: relative;
     padding-bottom: 56.25%; /* 16:9 */
-    @media ${sizes.medium} {
-      padding-bottom: 600px; /* avoid big gaps */
-    }
     padding-top: 25px;
     height: 0;
     max-height: 600px;
+
+    &.small {
+      max-width: ${p => p.theme.width.width};
+    }
+
+    @media ${sizes.medium} {
+      padding-bottom: 600px; /* avoid big gaps */
+      &.small {
+        padding-bottom: 300px; /* avoid big gaps */
+      }
+    }
   `;
 
   const Iframe = styled.iframe`
@@ -28,7 +36,7 @@ const Video = ({ id, title }) => {
   `;
 
   return (
-    <Wrapper className="video">
+    <Wrapper className={`video ${size === 'small' ? 'small' : ''}`}>
       <Iframe
         title={title}
         src={`https://www.youtube.com/embed/${id}?${options}`}
@@ -41,6 +49,11 @@ const Video = ({ id, title }) => {
 Video.propTypes = {
   id: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
+  size: PropTypes.string,
+};
+
+Video.defaultProps = {
+  size: null,
 };
 
 export default Video;

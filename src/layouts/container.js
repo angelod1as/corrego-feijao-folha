@@ -4,6 +4,7 @@ import styled, { ThemeProvider } from 'styled-components';
 
 import GlobalStyle from '../components/global-style';
 import SEO from '../components/seo';
+import Footer from '../components/footer';
 
 // import size from '../components/breakpoints';
 
@@ -14,12 +15,14 @@ const theme = {
     black: '#333333',
     gray: '#CCCCCC',
     darkgray: '#A9A9A9',
+    darkergray: '#707070',
     bg: '#140000',
     gradient: 'linear-gradient(to bottom, #191919 0%, #120000 100% )',
   },
   font: {
     display: 'Folha Grafico,Helvetica Neue,Helvetica,Arial,sans-serif',
     text: 'Folha Texto,Georgia,Times New Roman,serif;',
+    title: 'FolhaII, Folha II, Georgia, serif',
   },
   width: {
     full: '100%',
@@ -45,6 +48,7 @@ const Container = ({ children, seo }) => {
         <GlobalStyle />
         <SEO title={seo} />
         <Main>{children}</Main>
+        <Footer />
       </>
     </ThemeProvider>
   );

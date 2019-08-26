@@ -14,7 +14,11 @@ export const parseOptions = props => {
         }
         if (domNode.attribs.class === 'video') {
           return (
-            <Video title={domNode.attribs.title || 'Vídeo'} id={domNode.attribs['data-video']} />
+            <Video
+              title={domNode.attribs.title || 'Vídeo'}
+              id={domNode.attribs['data-video']}
+              size={domNode.attribs['data-size']}
+            />
           );
         }
         if (domNode.attribs.class === 'mosaic' && props && props.mosaic) {

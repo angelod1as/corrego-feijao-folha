@@ -2,7 +2,7 @@
 createdAt: 2019-07-05T20:41:34.954Z
 updatedAt: 2019-07-06T20:41:34.954Z
 person: true
-opening: https://via.placeholder.com/500
+opening: './thumbs/noe.webp'
 title: Noé
 lead: Linha fina Lorem ipsum dolor sit amet
 order: 5
@@ -15,7 +15,7 @@ order: 5
 - Nascimento: 1957
 - Quando chegou no Córrego do Feijão: 2002
 - Família:  Dona Maria (cota)
-- Filhos: Renan > Rominho > Rodrigo (falecido no acidente) > Rangel
+- Filhos: Renan, Rominho, Rodrigo (falecido no acidente) e Rangel
 
 </div>
 

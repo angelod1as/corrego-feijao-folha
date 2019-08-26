@@ -2,7 +2,7 @@
 createdAt: 2019-07-05T20:41:34.954Z
 updatedAt: 2019-07-06T20:41:34.954Z
 person: true
-opening: https://via.placeholder.com/500
+opening: './thumbs/vitor.webp'
 title: Vitor
 lead: Linha fina Lorem ipsum dolor sit amet
 order: 6

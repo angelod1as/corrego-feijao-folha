@@ -36,6 +36,11 @@ const GlobalStyle = createGlobalStyle`
     -webkit-font-smoothing: antialiased
   }
 
+  h1 {
+		font-family: ${p => p.theme.font.title};
+		font-weight: 800;
+	}
+
   img, figure {
     width: 100%;
     height: auto;

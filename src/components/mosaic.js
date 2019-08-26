@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import uuid from 'uuid/v1';
+import Fade from 'react-reveal/Fade';
 
 import Link from './link';
 
@@ -39,8 +40,11 @@ const Tile = styled.div`
   height: auto;
 `;
 
-const Thumb = styled.img`
-  transition: transform 0.2s;
+const Thumb = styled.picture`
+  img,
+  source {
+    transition: transform 0.2s;
+  }
 `;
 
 const Name = styled.h2`
@@ -56,10 +60,17 @@ const Mosaic = ({ content, home }) => {
       fields: { fullPath },
     } = each.node;
 
+    const webpImage = home ? opening : `.${opening}`;
+    const jpgImage = webpImage.replace('.webp', '.jpg');
+
     return (
       <Link key={uuid()} to={fullPath}>
         <Tile>
-          <Thumb src={opening} alt="" />
+          <Thumb>
+            <source srcSet={webpImage} type="image/webp" />
+            <source srcSet={jpgImage} type="image/jpeg" />
+            <img src={jpgImage} alt="" />
+          </Thumb>
           <Name>{title}</Name>
         </Tile>
       </Link>
@@ -69,14 +80,18 @@ const Mosaic = ({ content, home }) => {
   if (home) {
     return (
       <Outer className="home">
-        <Inner>{inner}</Inner>
+        <Fade>
+          <Inner>{inner}</Inner>
+        </Fade>
       </Outer>
     );
   }
   return (
     <Outer className="page">
-      <h2>Conheça outras histórias</h2>
-      <Inner>{inner}</Inner>
+      <Fade>
+        <h2>Conheça outras histórias</h2>
+        <Inner>{inner}</Inner>
+      </Fade>
     </Outer>
   );
 };

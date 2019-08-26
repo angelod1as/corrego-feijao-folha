@@ -10,7 +10,7 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-catch-links`,
     `gatsby-plugin-styled-components`,
-    'gatsby-plugin-transition-link',
+    // 'gatsby-plugin-transition-link',
     {
       resolve: `gatsby-source-filesystem`,
       options: {
