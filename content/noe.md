@@ -2,7 +2,7 @@
 createdAt: 2019-07-05T20:41:34.954Z
 updatedAt: 2019-07-06T20:41:34.954Z
 person: true
-opening: './thumbs/noe.webp'
+opening: './thumbs/noe.gif'
 title: Noé
 lead: Linha fina Lorem ipsum dolor sit amet
 order: 5

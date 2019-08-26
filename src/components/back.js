@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import Link from './link';
+import { Link, withPrefix } from 'gatsby';
 
 const BackLink = styled.div`
   a {
@@ -25,7 +25,7 @@ const BackLink = styled.div`
 const Back = ({ to }) => {
   return (
     <BackLink>
-      <Link direction="right" to={to}>
+      <Link direction="right" to={withPrefix(to)}>
         Córrego do Feijão
       </Link>
     </BackLink>

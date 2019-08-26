@@ -1,9 +1,10 @@
 const path = require(`path`);
 
 module.exports = {
+  pathPrefix: `/teste/angelo/corrego-feijao/`,
   siteMetadata: {
-    title: `Angelo Dias' Portfolio`,
-    description: `I do a lot of stuff and I'd like to show them`,
+    title: `Córrego do Feijão`,
+    description: ``,
     author: `@_cronofobico`,
   },
   plugins: [
@@ -72,8 +73,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Angelo Dias' Portfolio`,
-        short_name: `portfolio`,
+        name: `Córrego do Feijão`,
+        short_name: `corrrego-feijao`,
         start_url: `/`,
         background_color: `#19006A`,
         theme_color: `#19006A`,

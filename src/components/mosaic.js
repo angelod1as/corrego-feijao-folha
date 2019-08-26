@@ -3,8 +3,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import uuid from 'uuid/v1';
 import Fade from 'react-reveal/Fade';
-
-import Link from './link';
+import { withPrefix, Link } from 'gatsby';
 
 const Outer = styled.div`
   &.home {
@@ -60,15 +59,20 @@ const Mosaic = ({ content, home }) => {
       fields: { fullPath },
     } = each.node;
 
+    const path = fullPath.substring(1);
+    console.log(path, withPrefix(path));
+
     const webpImage = home ? opening : `.${opening}`;
-    const jpgImage = webpImage.replace('.webp', '.jpg');
+    const jpgImage = webpImage.replace('.webp', '.jpg').replace('.gif', '.jpg');
 
     return (
-      <Link key={uuid()} to={fullPath}>
+      <Link key={uuid()} to={path}>
         <Tile>
+          <p>{path}</p>
+          <p>{withPrefix(path)}</p>
           <Thumb>
-            <source srcSet={webpImage} type="image/webp" />
-            <source srcSet={jpgImage} type="image/jpeg" />
+            {/* <source srcSet={webpImage} type="image/webp" /> */}
+            {/* <source srcSet={jpgImage} type="image/jpeg" /> */}
             <img src={jpgImage} alt="" />
           </Thumb>
           <Name>{title}</Name>
