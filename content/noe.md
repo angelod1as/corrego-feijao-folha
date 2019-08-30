@@ -2,10 +2,11 @@
 createdAt: 2019-07-05T20:41:34.954Z
 updatedAt: 2019-07-06T20:41:34.954Z
 person: true
-opening: './thumbs/noe.gif'
+opening: ./thumbs/noe.gif
 title: Noé
-lead: Linha fina Lorem ipsum dolor sit amet
-order: 5
+lead: 'Por aqui até o ar tá triste, você repara?'
+order: 2
+published: true
 ---
 
 <div class="infos">
@@ -13,16 +14,14 @@ order: 5
 - Nome completo: Noé Henrique de Oliveira
 - Cidade de origem: Vitória/ES
 - Nascimento: 1957
-- Quando chegou no Córrego do Feijão: 2002
-- Família:  Dona Maria (cota)
-- Filhos: Renan, Rominho, Rodrigo (falecido no acidente) e Rangel
+- Quando chegou no Córrego do Feijão: 1987
+- Família:  Dona Cota (esposa), Dona Carmem (sogra)
 
 </div>
 
-<div class="video" title="Título descritivo do vídeo para acessibilidade" data-video="zeKT_YFuU0o"></div>
+<div class="video" title="Título descritivo do vídeo para acessibilidade" data-video="GkOQsx11G-w"></div>
 
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+No início da década de 90 Noé partiu para Rondônia em busca de emprego e melhores condições. Dona Cota foi junto. Ela estava grávida e a sorte não foi generosa no início da jornada. Cota voltou para a casa dos pais no Córrego do Feijão e Noé continuou em Ji-Paraná. Na nossa conversa, Noé contou como foram os momentos de saudade e mostrou uma música que ouvia nos momentos de solidão: Toalha Molhada, do Criolo e Juvenil.
 
-<div class="video" title="Título descritivo do vídeo para acessibilidade" data-video="PTMNSy5o5dc"></div>
+<div class="video" data-size="small" title="Título descritivo do vídeo para acessibilidade" data-video="abzpkmbIGSE"></div>
 
-citação: "por aqui até o ar tá triste, você repara?"
