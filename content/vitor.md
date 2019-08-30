@@ -2,20 +2,20 @@
 createdAt: 2019-07-05T20:41:34.954Z
 updatedAt: 2019-07-06T20:41:34.954Z
 person: true
-opening: './thumbs/vitor.gif'
+opening: ./thumbs/vitor.gif
 title: Vitor
-lead: Linha fina Lorem ipsum dolor sit amet
+lead: Eu nem sabia que tinha barragem que dava pra fazer esse estrago por aqui.
 order: 6
+published: true
 ---
 
 <div class="infos">
 
 - Nome completo: Victor Gabriel Venancio Braga
-- Cidade de origem: Brumadinho, Córrego do Feijão
+- Cidade de origem: Córrego do Feijão, Brumadinho - MG
 - Nascimento: 2000
 
 </div>
 
-<div class="video" title="Título descritivo do vídeo para acessibilidade" data-video="zeKT_YFuU0o"></div>
+<div class="video" title="Título descritivo do vídeo para acessibilidade" data-video="_ETsK3Dp0AQ"></div>
 
-citação: "eu nem sabia que tinha barragem que dava pra fazer esse estrago por aqui."
