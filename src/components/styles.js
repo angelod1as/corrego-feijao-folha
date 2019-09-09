@@ -10,7 +10,9 @@ export const Main = styled.main`
   }
 `;
 
-export const Title = styled.h1``;
+export const Title = styled.h1`
+  color: ${p => p.theme.color.color};
+`;
 
 export const Lead = styled.p`
   font-size: 1.5em;

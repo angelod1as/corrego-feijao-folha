@@ -22,10 +22,9 @@ const More = ({ title }) => (
       }
     `}
     render={data => {
-      console.log(data);
       return (
         <Others>
-          <div>oi</div>
+          <div>More</div>
         </Others>
       );
     }}

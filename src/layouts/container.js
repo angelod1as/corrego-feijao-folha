@@ -10,14 +10,15 @@ import Footer from '../components/footer';
 
 const theme = {
   color: {
-    color: '#fba67b',
-    white: '#F4F4F4',
-    black: '#333333',
+    color: '#b33c00',
+    white: '#333333',
+    black: '#F4F4F4',
+    lightgray: '#F4F4F4',
     gray: '#CCCCCC',
     darkgray: '#A9A9A9',
     darkergray: '#707070',
     bg: '#140000',
-    gradient: 'linear-gradient(to bottom, #191919 0%, #120000 100% )',
+    gradient: '#FFFFFF',
   },
   font: {
     display: 'Folha Grafico,Helvetica Neue,Helvetica,Arial,sans-serif',

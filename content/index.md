@@ -19,5 +19,3 @@ Conheça a história de alguns dos moradores do Córrego do Feijão clicando nas
 <div class="mosaic"></div>
 
 <div class="video" title="Título descritivo do vídeo para acessibilidade" data-video="pKguak5YLY0"></div>
-
-todos os depoimentos foram colhidos entre os dias 09/04/2019 e 17/04/2019.

@@ -4,7 +4,8 @@ updatedAt: 2019-07-06T20:41:34.954Z
 person: true
 opening: ./thumbs/noe.gif
 title: Noé
-lead: 'Por aqui até o ar tá triste, você repara?'
+lead: >-
+  "Por aqui até o ar tá triste, você repara?"
 order: 2
 published: true
 ---

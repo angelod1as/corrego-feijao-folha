@@ -4,7 +4,8 @@ updatedAt: 2019-07-06T20:41:34.954Z
 person: true
 opening: ./thumbs/celso-e-laissa.gif
 title: Celso e Laíssa
-lead: Pra ser sincero eu não estou botando muita fé nesse lugar aqui mais não.
+lead: >-
+  "Pra ser sincero eu não estou botando muita fé nesse lugar aqui mais não."
 order: 5
 published: true
 ---

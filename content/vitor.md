@@ -4,7 +4,8 @@ updatedAt: 2019-07-06T20:41:34.954Z
 person: true
 opening: ./thumbs/vitor.gif
 title: Vitor
-lead: Eu nem sabia que tinha barragem que dava pra fazer esse estrago por aqui.
+lead: >-
+  "Eu nem sabia que tinha barragem que dava pra fazer esse estrago por aqui."
 order: 6
 published: true
 ---

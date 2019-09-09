@@ -5,8 +5,8 @@ person: true
 opening: ./thumbs/carmem.gif
 title: Carmem
 lead: >-
-  Não adianta querer fugir de problema. Aonde a gente for, os problemas vão
-  atrás.
+  "Não adianta querer fugir de problema. Aonde a gente for, os problemas vão
+  atrás."
 order: 1
 published: true
 ---

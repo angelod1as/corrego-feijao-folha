@@ -5,8 +5,8 @@ person: true
 opening: ./thumbs/tico.gif
 title: Tico
 lead: >-
-  Isso aqui eles podem folhear a ouro que nada vai apagar o que aconteceu. Nunca
-  mais.
+  "Isso aqui eles podem folhear a ouro que nada vai apagar o que aconteceu. Nunca
+  mais."
 order: 4
 published: true
 ---
