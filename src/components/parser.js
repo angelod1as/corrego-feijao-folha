@@ -79,6 +79,9 @@ export const parseNames = names => {
 
 export const parseDates = (created, updated) => {
   const fix = date => {
+    if (date[0] === '0') {
+      date = date.substring(1, date.length); // eslint-disable-line
+    }
     return date
       .toLowerCase()
       .replace(' - ', ' às ')
@@ -86,13 +89,35 @@ export const parseDates = (created, updated) => {
   };
   const result = [];
   if (created) {
-    result.push(<p key={uuid()}>{fix(created)}</p>);
+    result.push(
+      <p key={uuid()} className="created">
+        {fix(created)}
+      </p>
+    );
   }
   if (created && updated) {
-    result.push(<p key={uuid()}>Atualizado: {fix(updated)}</p>);
+    result.push(
+      <p key={uuid()} className="updated">
+        Atualizado: {fix(updated)}
+      </p>
+    );
   } else if (updated) {
-    result.push(<p key={uuid()}>Última atualização: {fix(updated)}</p>);
+    result.push(
+      <p key={uuid()} className="updated">
+        Última atualização: {fix(updated)}
+      </p>
+    );
   }
 
   return result;
+};
+
+export const parseQuotes = string => {
+  let i = 0;
+  const q = ['“', '”'];
+  return string.replace(/"/g, () => {
+    const quote = q[i];
+    i = 1 - i;
+    return quote;
+  });
 };

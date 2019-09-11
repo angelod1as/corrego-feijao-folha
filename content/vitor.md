@@ -12,7 +12,7 @@ published: true
 
 <div class="infos">
 
-- Nome completo: Victor Gabriel Venancio Braga
+- Nome: Victor Gabriel Venancio Braga
 - Cidade de origem: Córrego do Feijão, Brumadinho - MG
 - Nascimento: 2000
 

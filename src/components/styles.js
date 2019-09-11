@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import bp from './breakpoints';
 
 export const Main = styled.main`
   max-width: ${p => p.theme.width.full};
@@ -11,7 +12,24 @@ export const Main = styled.main`
 `;
 
 export const Title = styled.h1`
+  font-size: 3em;
   color: ${p => p.theme.color.color};
+  line-height: 1.15em;
+  margin: 20px auto 30px auto;
+  &.quote {
+    font-size: 2.5em;
+  }
+  @media ${bp.small} {
+    font-size: 4em;
+    &.quote {
+      font-size: 3.3em;
+    }
+  }
+`;
+
+export const Kicker = styled.p`
+  /* color: ${p => p.theme.color.color}; */
+  font-weight: 700;
 `;
 
 export const Lead = styled.p`
@@ -23,9 +41,14 @@ export const Dates = styled.div`
   margin: 20px auto;
   p {
     font-family: ${p => p.theme.font.display};
-    font-size: 0.95em;
+    font-size: 0.9em;
     padding: 0;
     font-weight: 500;
+    margin-bottom: 10px;
+    &.updated {
+      font-weight: 400;
+      color: ${p => p.theme.color.darkergray};
+    }
   }
 `;
 

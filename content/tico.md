@@ -13,7 +13,7 @@ published: true
 
 <div class="infos">
 
-- Nome completo: Wilson José Ferreira
+- Nome: Wilson José Ferreira
 - Cidade de origem: Ceres - GO
 - Nascimento: 1964
 - Quando chegou no Córrego do Feijão: 1982

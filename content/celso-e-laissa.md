@@ -1,6 +1,6 @@
 ---
-createdAt: 2019-07-05T20:41:34.954Z
-updatedAt: 2019-07-06T20:41:34.954Z
+createdAt: 2019-07-25T20:41:34.954Z
+updatedAt: 2019-07-16T20:41:34.954Z
 person: true
 opening: ./thumbs/celso-e-laissa.gif
 title: Celso e Laíssa
@@ -12,7 +12,7 @@ published: true
 
 <div class="infos">
 
-- Nome completo: Celso? e Laíssa?
+- Nome: Celso? e Laíssa?
 - Cidade de origem: Celso - Córrego do Feijão, Brumadinho - MG e Laíssa -  Belford Roxo - RJ
 - Nascimento: Celso - 2000  e Laíssa - 2001 
 

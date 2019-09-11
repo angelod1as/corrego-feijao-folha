@@ -4,11 +4,15 @@ import styled from 'styled-components';
 import uuid from 'uuid/v1';
 import Fade from 'react-reveal/Fade';
 import { withPrefix, Link } from 'gatsby';
+import bp from './breakpoints';
 
 const Outer = styled.div`
   &.home {
     max-width: ${p => p.theme.width.max} !important;
-    margin: 100px auto !important;
+    margin: 50px auto !important;
+    @media ${bp.small} {
+      margin: 100px auto !important;
+    }
   }
   &.page {
   }
@@ -16,14 +20,22 @@ const Outer = styled.div`
 `;
 
 const Inner = styled.div`
-  display: grid;
-  grid-gap: 10px;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  transition: transform 1s;
+  margin: 0 auto;
+
+  @media ${bp.small} {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    transition: transform 1s;
+  }
 
   a {
-    margin: 0;
+    margin: 30px auto;
+    display: block;
+    @media ${bp.small} {
+      margin: 0;
+    }
     padding: 0;
     position: relative;
     &:hover {
@@ -47,9 +59,22 @@ const Thumb = styled.picture`
 `;
 
 const Name = styled.h2`
-  padding: 0;
+  padding: 0 5px;
   margin: 0;
   font-size: 1.5em;
+  @media ${bp.small} {
+    padding: 0;
+  }
+`;
+
+const Recommended = styled.h2`
+  font-size: 22px;
+  font-weight: 700;
+  padding: 0 5px;
+  margin-bottom: 10px;
+  @media ${bp.small} {
+    padding: 0;
+  }
 `;
 
 const Mosaic = ({ content, home }) => {
@@ -90,7 +115,7 @@ const Mosaic = ({ content, home }) => {
   return (
     <Outer className="page">
       <Fade>
-        <h2>Conheça outras histórias</h2>
+        <Recommended>outras histórias</Recommended>
         <Inner>{inner}</Inner>
       </Fade>
     </Outer>

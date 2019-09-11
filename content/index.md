@@ -1,5 +1,5 @@
 ---
-title: Córrego do Feijão
+title: Título melhor para SEO
 home: true
 lead: >-
   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam ratione

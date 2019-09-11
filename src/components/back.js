@@ -7,6 +7,7 @@ const BackLink = styled.div`
   a {
     padding: 0 0 0 20px;
     position: relative;
+    font-weight: 700;
     &:before {
       content: '‹';
       top: -2px;
