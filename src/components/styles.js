@@ -30,6 +30,10 @@ export const Title = styled.h1`
 export const Kicker = styled.p`
   /* color: ${p => p.theme.color.color}; */
   font-weight: 700;
+  margin: 20px auto;
+  &.quote {
+    font-size: 3.3em;
+  }
 `;
 
 export const Lead = styled.p`
