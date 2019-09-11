@@ -12,7 +12,7 @@ published: true
 
 <div class="infos">
 
-- Nome completo: Conceição Lopes Fernandes Silva
+- Nome: Conceição Lopes Fernandes Silva
 - Cidade de origem: Itamarandiba/MG
 - Nascimento: 1965
 - Quando chegou no Córrego do Feijão: 2002

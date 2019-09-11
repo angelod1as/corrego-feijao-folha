@@ -17,7 +17,7 @@ export const StyledFooter = styled.footer`
 
 const Footer = () => (
   <StyledFooter>
-    <p>Todos os depoimentos foram colhidos entre os dias 09/04/2019 e 17/04/2019.</p>
+    <p>Todos os depoimentos foram colhidos entre os dias 9.abr.2019 e 17.abr.2019.</p>
     {/* <p>
       Expediente: <b>Desenvolvimento</b> Angelo Dias - ...........
     </p> */}

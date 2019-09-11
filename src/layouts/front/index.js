@@ -4,7 +4,7 @@ import parse from 'html-react-parser';
 import styled from 'styled-components';
 
 import { parseDates, parseNames, parseOptions } from '../../components/parser';
-import { Main, Title, Lead, Dates, Names, Html } from '../../components/styles';
+import { Main, Title, Lead, Dates, Names, Html, Chapeu } from '../../components/styles';
 
 const Front = ({
   content: {
@@ -15,6 +15,7 @@ const Front = ({
 }) => {
   return (
     <Main>
+      <Chapeu>Córrego do Feijão</Chapeu>
       <Title>{title}</Title>
       <Lead>{lead}</Lead>
       {createdAt || updatedAt ? <Dates>{parseDates(createdAt, updatedAt)}</Dates> : ''}

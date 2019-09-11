@@ -12,7 +12,7 @@ published: true
 
 <div class="infos">
 
-- Nome completo: Noé Henrique de Oliveira
+- Nome: Noé Henrique de Oliveira
 - Cidade de origem: Vitória/ES
 - Nascimento: 1957
 - Quando chegou no Córrego do Feijão: 1987

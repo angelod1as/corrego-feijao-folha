@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import parse from 'html-react-parser';
 
-import { parseDates, parseNames, parseOptions } from '../../components/parser';
+import { parseDates, parseNames, parseOptions, parseQuotes } from '../../components/parser';
 import Mosaic from '../../components/mosaic';
 
 import Back from '../../components/back';
@@ -17,8 +17,8 @@ const Page = ({ content, pages }) => {
   return (
     <Main>
       <Back to="/" />
-      <Title>{title}</Title>
-      <Lead>{lead}</Lead>
+      <Title className="quote">{parseQuotes(lead)}</Title>
+      {/* <Lead>{title}</Lead> */}
       {createdAt || updatedAt ? <Dates>{parseDates(createdAt, updatedAt)}</Dates> : ''}
       {names && names.length > 0 ? <Names>{parseNames(names)}</Names> : ''}
       <Html>{parse(html, parseOptions())}</Html>

@@ -12,6 +12,15 @@ export const Main = styled.main`
 
 export const Title = styled.h1`
   color: ${p => p.theme.color.color};
+  line-height: 1.15em;
+  margin: 20px auto;
+  &.quote {
+    font-size: 3.3em;
+  }
+`;
+
+export const Chapeu = styled.p`
+  color: ${p => p.theme.color.color};
 `;
 
 export const Lead = styled.p`
@@ -23,9 +32,14 @@ export const Dates = styled.div`
   margin: 20px auto;
   p {
     font-family: ${p => p.theme.font.display};
-    font-size: 0.95em;
+    font-size: 0.9em;
     padding: 0;
     font-weight: 500;
+    margin-bottom: 10px;
+    &.updated {
+      font-weight: 400;
+      color: ${p => p.theme.color.darkergray};
+    }
   }
 `;
 

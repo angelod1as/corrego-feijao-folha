@@ -52,6 +52,11 @@ const Name = styled.h2`
   font-size: 1.5em;
 `;
 
+const Recommended = styled.h2`
+  font-size: 22px;
+  font-weight: 700;
+`;
+
 const Mosaic = ({ content, home }) => {
   const inner = content.map(each => {
     const {
@@ -90,7 +95,7 @@ const Mosaic = ({ content, home }) => {
   return (
     <Outer className="page">
       <Fade>
-        <h2>Conheça outras histórias</h2>
+        <Recommended>outras histórias</Recommended>
         <Inner>{inner}</Inner>
       </Fade>
     </Outer>

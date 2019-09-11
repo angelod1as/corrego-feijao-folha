@@ -13,7 +13,7 @@ published: true
 
 <div class="infos">
 
-- Nome completo: Carmem Vicentina Barbosa
+- Nome: Carmem Vicentina Barbosa
 - Cidade de origem: Córrego do Feijão, Brumadinho - MG
 - Nascimento: 1945
 - Família: Dona Cota (filha) e Noé (genro)
