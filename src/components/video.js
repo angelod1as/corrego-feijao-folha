@@ -39,8 +39,9 @@ const Video = ({ id, title, size }) => {
     <Wrapper className={`video ${size === 'small' ? 'small' : ''}`}>
       <Iframe
         title={title}
-        src={`https://www.youtube.com/embed/${id}?${options}`}
+        allowFullScreen="allowFullScreen"
         frameBorder="0"
+        src={`https://www.youtube.com/embed/${id}?${options}`}
       />
     </Wrapper>
   );
