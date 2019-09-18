@@ -1,28 +1,20 @@
 ---
-createdAt: 2019-07-05T20:41:34.954Z
-updatedAt: 2019-07-06T20:41:34.954Z
+createdAt: {}
+updatedAt: {}
 person: true
 opening: ./thumbs/noe.gif
 title: Noé
-lead: >-
-  "Por aqui até o ar tá triste, você repara?"
+lead: '"Por aqui até o ar tá triste, você repara?"'
 order: 2
 published: true
 ---
+O capixaba Noé Henrique de Oliveira aparece no Córrego do Feijão em 1987. Já trazendo na mala alguns anos de experiência em obras, Noé não teve dificuldade para conseguir emprego. O que ele não imaginava é que seu patrão, Seu Basílio, tinha uma filha por quem  iria se apaixonar e construir família. 
 
-<div class="infos">
-
-- Nome: Noé Henrique de Oliveira
-- Cidade de origem: Vitória/ES
-- Nascimento: 1957
-- Quando chegou no Córrego do Feijão: 1987
-- Família:  Dona Cota (esposa), Dona Carmem (sogra)
-
-</div>
+Em 2015, Noé sofreu um derrame e teve que aposentar sua vida de pedreiro.
+Olhando para o quintal de sua casa ele diz: “ Aqui eu casei, criei meu filhos tudo. E no final da história aqui era um lugar feliz”. Rodrigo, seu terceiro filho, trabalhava para a Vale e na sexta-feira do dia 25 de janeiro ele estava em serviço. Noé ainda não teve coragem de ir olhar a lama de perto.
 
 <div class="video" title="Título descritivo do vídeo para acessibilidade" data-video="GkOQsx11G-w"></div>
 
-No início da década de 90 Noé partiu para Rondônia em busca de emprego e melhores condições. Dona Cota foi junto. Ela estava grávida e a sorte não foi generosa no início da jornada. Cota voltou para a casa dos pais no Córrego do Feijão e Noé continuou em Ji-Paraná. Na nossa conversa, Noé contou como foram os momentos de saudade e mostrou uma música que ouvia nos momentos de solidão: Toalha Molhada, do Criolo e Juvenil.
+Dona Cota, que se tornou sua esposa e mãe dos seus 4 filhos, esperava seu primeiro quando partiu com Noé rumo a Rondônia na promessa de emprego e ascensão social. A falta de sorte e dinheiro fez com que Cota voltasse para ter o filho perto da família. Noé ficou em Ji-Paraná na expectativa de uma resposta de emprego:
 
 <div class="video" data-size="small" title="Título descritivo do vídeo para acessibilidade" data-video="abzpkmbIGSE"></div>
-
