@@ -1,10 +1,10 @@
 ---
-createdAt: {}
-updatedAt: {}
+createdAt: 2019-07-05T20:41:34.954Z
+updatedAt: 2019-07-06T20:41:34.954Z
 person: true
 opening: ./thumbs/vitor.gif
 title: Alcir
-lead: '"Eu nem sabia que tinha barragem que dava pra fazer esse estrago por aqui."'
+lead: '"Deus abençoou que acabou o contrato e eles me mandaram embora"'
 order: 6
 published: true
 ---
