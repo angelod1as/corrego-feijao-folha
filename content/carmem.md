@@ -1,6 +1,6 @@
 ---
-createdAt: 2019-07-05T20:41:34.954Z
-updatedAt: 2019-07-06T20:41:34.954Z
+createdAt: {}
+updatedAt: {}
 person: true
 opening: ./thumbs/carmem.gif
 title: Carmem
@@ -10,15 +10,10 @@ lead: >-
 order: 1
 published: true
 ---
+A mina Córrego do Feijão iniciou as atividades em 1956, comandada pela Companhia de Mineração Ferro e Carvão. Onze anos antes, em 1945, nascia Carmem Vicentina Barbosa, ou como é conhecida, dona Carminha. Ainda criança, ela viu a mineração chegar e dar emprego aos seus familiares, morou em casas fornecidas pelas empresas e acompanhou desde o início as mudanças geográficas da região.  
 
-<div class="infos">
+Como uma das primeiras moradoras do então batizado "Córrego do Feijão", ela viu a comunidade e seus moradores nascerem e crescerem, mas viu também a tragédia acontecer. Era sexta feira quando dona Carminha sentiu os vidros da janela balançar. Como ela mesma diz, imaginou ser um tremor de terra ou um caminhão pesado, só não imaginou que, aos 74 anos de idade, enterraria um neto, seis sobrinhos, centenas de conhecidos e metade do lugar que ajudou a construir.
 
-- Nome: Carmem Vicentina Barbosa
-- Cidade de origem: Córrego do Feijão, Brumadinho - MG
-- Nascimento: 1945
-- Família: Dona Cota (filha) e Noé (genro)
-
-</div>
 
 <div class="video" title="Título descritivo do vídeo para acessibilidade" data-video="UGa5rFyJMKo"></div>
 
