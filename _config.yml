@@ -3,11 +3,11 @@ prose:
     content:
       - name: createdAt
         field:
-          element: text
+          element: hidden
           label: Data de criação
       - name: updatedAt
         field:
-          element: text
+          element: hidden
           label: Data de atualização
       - name: title
         field:

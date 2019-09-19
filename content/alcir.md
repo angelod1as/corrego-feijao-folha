@@ -1,8 +1,8 @@
 ---
 published: true
 person: true
-createdAt: 'Fri Jul 05 2019 17:41:34 GMT-0300 (Horário Padrão de Brasília)'
-updatedAt: 'Sat Jul 06 2019 17:41:34 GMT-0300 (Horário Padrão de Brasília)'
+createdAt: 2019-07-05T20:41:34.954Z
+updatedAt: 2019-07-06T20:41:34.954Z
 opening: ./thumbs/alcir.jpg
 title: Alcir
 lead: '"Deus abençoou que acabou o contrato e eles me mandaram embora"'
