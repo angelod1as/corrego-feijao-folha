@@ -1,11 +1,10 @@
 ---
-createdAt: 2019-07-25T20:41:34.954Z
-updatedAt: 2019-07-16T20:41:34.954Z
+createdAt: {}
+updatedAt: {}
 person: true
 opening: ./thumbs/celso-e-laissa.gif
 title: Celso e Laíssa
-lead: >-
-  "Pra ser sincero eu não estou botando muita fé nesse lugar aqui mais não."
+lead: '"Pra ser sincero eu não estou botando muita fé nesse lugar aqui mais não."'
 order: 5
 published: true
 ---
@@ -22,4 +21,4 @@ published: true
 
 Assim como Celso, o Alcir dos Santos também trabalhou para a Brasanitas, empresa terceirizada da Vale para a limpeza dos vagões. Alcir chegou no Feijão em 2012 devido a uma doença da mãe e, desde então, se estabeleceu no Córrego com sua família. Assista:
 
-<div class="video" data-size="small" title="Título descritivo do vídeo para acessibilidade" data-video="k2Xe8Ruwa9o"></div>
+<div class="video" data-size="small" title="Título descritivo do vídeo para acessibilidade" data-video="_ETsK3Dp0AQ"></div>
