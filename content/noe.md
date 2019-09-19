@@ -1,8 +1,8 @@
 ---
-createdAt: {}
-updatedAt: {}
+createdAt: 2019-07-06T20:41:34.954Z
+updatedAt: 2019-07-06T20:41:34.954Z
 person: true
-opening: ./thumbs/noe.gif
+opening: ./thumbs/noe.jpg
 title: Noé
 lead: '"Por aqui até o ar tá triste, você repara?"'
 order: 2

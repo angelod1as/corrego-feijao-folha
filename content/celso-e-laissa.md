@@ -1,8 +1,8 @@
 ---
-createdAt: {}
-updatedAt: {}
+createdAt: 2019-07-06T20:41:34.954Z
+updatedAt: 2019-07-06T20:41:34.954Z
 person: true
-opening: ./thumbs/celso-e-laissa.gif
+opening: ./thumbs/celso-e-laissa.jpg
 title: Celso e Laíssa
 lead: '"Pra ser sincero eu não estou botando muita fé nesse lugar aqui mais não."'
 order: 5

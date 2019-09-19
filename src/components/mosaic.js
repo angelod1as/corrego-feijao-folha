@@ -86,18 +86,16 @@ const Mosaic = ({ content, home }) => {
 
     const path = fullPath.substring(1);
 
-    const webpImage = home ? opening : `.${opening}`;
-    const jpgImage = webpImage.replace('.webp', '.jpg').replace('.gif', '.jpg');
+    const jpgImage = home ? opening : `.${opening}`;
+    // const jpgImage = webpImage.replace('.webp', '.jpg').replace('.gif', '.jpg');
 
     return (
       <Link key={uuid()} to={path}>
         <Tile>
           <Thumb>
-            {/* <source srcSet={webpImage} type="image/webp" /> */}
-            {/* <source srcSet={jpgImage} type="image/jpeg" /> */}
             <img src={jpgImage} alt="" />
           </Thumb>
-          <Name>{title}</Name>
+          {/* <Name>{title}</Name> */}
         </Tile>
       </Link>
     );

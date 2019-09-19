@@ -1,8 +1,8 @@
 ---
-createdAt: {}
-updatedAt: {}
+createdAt: 2019-07-06T20:41:34.954Z
+updatedAt: 2019-07-06T20:41:34.954Z
 person: true
-opening: ./thumbs/tico.gif
+opening: ./thumbs/tico.jpg
 title: Tico
 lead: >-
   "Isso aqui eles podem folhear a ouro que nada vai apagar o que aconteceu.

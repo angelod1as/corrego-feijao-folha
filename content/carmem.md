@@ -1,8 +1,8 @@
 ---
-createdAt: {}
-updatedAt: {}
+createdAt: 2019-07-05T20:41:34.954Z
+updatedAt: 2019-07-06T20:41:34.954Z
 person: true
-opening: ./thumbs/carmem.gif
+opening: ./thumbs/carmem.jpg
 title: Carmem
 lead: >-
   "Não adianta querer fugir de problema. Aonde a gente for, os problemas vão

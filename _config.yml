@@ -1,0 +1,33 @@
+prose:
+  metadata:
+    content:
+      - name: createdAt
+        field:
+          element: text
+          label: Data de criação
+      - name: updatedAt
+        field:
+          element: text
+          label: Data de atualização
+      - name: title
+        field:
+          element: text
+          label: Título
+      - name: lead
+        field:
+          element: text
+          label: Linha fina
+      - name: person
+        field:
+          element: hidden
+      - name: opening
+        field:
+          element: text
+          label: Imagem
+      - name: order
+        field:
+          element: number
+          label: Ordem
+      - name: published
+        field:
+          element: hidden

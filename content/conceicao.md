@@ -1,8 +1,8 @@
 ---
-createdAt: {}
-updatedAt: {}
+createdAt: 2019-07-06T20:41:34.954Z
+updatedAt: 2019-07-06T20:41:34.954Z
 person: true
-opening: ./thumbs/conceicao.gif
+opening: ./thumbs/conceicao.jpg
 title: Conceição
 lead: '"Ele foi meu primeiro namorado, meu esposo, e agora partiu."'
 order: 3
