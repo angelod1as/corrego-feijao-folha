@@ -22,7 +22,7 @@ const Page = ({ content, pages }) => {
       {createdAt || updatedAt ? <Dates>{parseDates(createdAt, updatedAt)}</Dates> : ''}
       {names && names.length > 0 ? <Names>{parseNames(names)}</Names> : ''}
       <Html>{parse(html, parseOptions())}</Html>
-      <Mosaic content={pages} home={false} />
+      <Mosaic content={pages} current={title.toLowerCase()} home={false} />
     </Main>
   );
 };
