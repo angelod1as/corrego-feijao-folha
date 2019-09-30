@@ -1,24 +1,22 @@
 ---
-createdAt: 2019-07-06T20:41:34.954Z
-updatedAt: 2019-07-06T20:41:34.954Z
+published: true
 person: true
+updatedAt: 2019-07-06T20:41:34.954Z
+createdAt: 2019-07-06T20:41:34.954Z
 opening: ./thumbs/celso-e-laissa.jpg
 title: Celso e Laíssa
 lead: '"Pra ser sincero eu não estou botando muita fé nesse lugar aqui mais não."'
 order: 5
-published: true
 ---
 
 <div class="infos">
 
-- Nome: Celso? e Laíssa?
-- Cidade de origem: Celso - Córrego do Feijão, Brumadinho - MG e Laíssa -  Belford Roxo - RJ
-- Nascimento: Celso - 2000  e Laíssa - 2001 
+Em 2017, Laissa e seus pais deixaram o Rio de Janeiro e chegaram no Córrego do Feijão. Logo ela conheceu Celso e os dois começaram a namorar. Celso Henrique de Oliveira, sobrinho de Noé, é nascido e criado no Córrego do Feijão. Assim como seu tio, viu muitos amigos morrerem no dia 25 de janeiro. Celso trabalha para a empresa Brasanitas, onde é responsável pela limpeza dos vagões de minério da Vale. Meses após o ocorrido, a vontade de Celso, é de deixar o córrego do feijão junto com Laissa e construir sua família em um lugar que não traga mais lembranças daquele dia.
 
 </div>
 
 <div class="video" title="Título descritivo do vídeo para acessibilidade" data-video="c1nzhUX01_4"></div>
 
-Assim como Celso, o Alcir dos Santos também trabalhou para a Brasanitas, empresa terceirizada da Vale para a limpeza dos vagões. Alcir chegou no Feijão em 2012 devido a uma doença da mãe e, desde então, se estabeleceu no Córrego com sua família. Assista:
+Assim como Celso, Vitor também foi criado no Córrego do Feijão. Eles foram colegas de classe na Escola Municipal Nossa Senhora das Dores, mas Vítor não concluiu os estudos. Assista:
 
 <div class="video" data-size="small" title="Título descritivo do vídeo para acessibilidade" data-video="_ETsK3Dp0AQ"></div>
