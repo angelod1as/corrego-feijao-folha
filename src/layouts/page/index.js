@@ -21,7 +21,9 @@ const Page = ({ content, pages }) => {
       {/* <Lead>{title}</Lead> */}
       {createdAt || updatedAt ? <Dates>{parseDates(createdAt, updatedAt)}</Dates> : ''}
       {names && names.length > 0 ? <Names>{parseNames(names)}</Names> : ''}
-      <Html>{parse(html, parseOptions())}</Html>
+      <div data-paywall-box>
+        <Html>{parse(html, parseOptions())}</Html>
+      </div>
       <Mosaic content={pages} current={title.toLowerCase()} home={false} />
     </Main>
   );

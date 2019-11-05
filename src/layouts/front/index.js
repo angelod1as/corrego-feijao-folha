@@ -20,7 +20,9 @@ const Front = ({
       <Lead>{lead}</Lead>
       {createdAt || updatedAt ? <Dates>{parseDates(createdAt, updatedAt)}</Dates> : ''}
       {names && names.length > 0 ? <Names>{parseNames(names)}</Names> : ''}
-      <Html>{parse(html, parseOptions({ mosaic: pages, home: true }))}</Html>
+      <div data-paywall-box>
+        <Html>{parse(html, parseOptions({ mosaic: pages, home: true }))}</Html>
+      </div>
     </Main>
   );
 };
