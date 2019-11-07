@@ -26,7 +26,7 @@ const BackLink = styled.div`
 const Back = ({ to }) => {
   return (
     <BackLink>
-      <Link direction="right" to={withPrefix(to)}>
+      <Link direction="right" to={to}>
         Córrego do Feijão
       </Link>
     </BackLink>
