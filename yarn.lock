@@ -6013,6 +6013,13 @@ gatsby-plugin-catch-links@^2.1.2:
     "@babel/runtime" "^7.6.3"
     escape-string-regexp "^1.0.5"
 
+gatsby-plugin-html-comments@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-html-comments/-/gatsby-plugin-html-comments-1.0.0.tgz#a2056b7a1ae7e85e290b53764370e14ef1e3a1b7"
+  integrity sha512-C+0k+kyLLgE7S7q4ww3/WqZLEPmzjxVJaokDwriwDidc+w18HhMOWuIdpqfaEuXsp+EWPMs5OZDg3Jxbq56rlg==
+  dependencies:
+    replace-in-file "^4.2.0"
+
 gatsby-plugin-manifest@^2.2.1:
   version "2.2.26"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-manifest/-/gatsby-plugin-manifest-2.2.26.tgz#040a7dc2ab54e64cc97481adfb498e5dc8caade4"
