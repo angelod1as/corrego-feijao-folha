@@ -89,7 +89,7 @@ module.exports = {
         comment: [
           {
             regexp: /<ssi-before-html>(.*?)<\/ssi-before-html>/g,
-            comment: `<!--#set var="section" value="#{section}"--><!--#set var="section_slug" value="#{section_slug}"--><!--#set var="special" value="#{special}"--><!--#set var="special_url" value="#{special_url}"--><!--#set var="show_ads" value="true"--><!--#set var="show_header_folha" value="true"--><!--#set var="show_header_news" value="false"--><!--#set var="show_title_header" value="false"--><!--#include virtual="/virtual/3.0/arte/script-app.inc"-->`,
+            comment: `<!--#set var="section" value="cotidiano"--><!--#set var="section_slug" value="cotidiano"--><!--#set var="special" value="tragédia em brumadinho"--><!--#set var="special_url" value="#{special_url}"--><!--#set var="show_ads" value="true"--><!--#set var="show_header_folha" value="true"--><!--#set var="show_header_news" value="false"--><!--#set var="show_title_header" value="false"--><!--#include virtual="/virtual/3.0/arte/script-app.inc"-->`,
           },
           {
             regexp: /<ssi-inside-head>(.*?)<\/ssi-inside-head>/g,
@@ -100,7 +100,7 @@ module.exports = {
             comment: `<!--#include virtual="/virtual/3.0/arte/article-graphic__full-page_after.inc"-->`,
           },
           {
-            regexp: /<ssi-after-body>(.*?)<\/ssi-after-body>/g,
+            regexp: /<ssi-header>(.*?)<\/ssi-header>/g,
             comment: `<!--#include virtual="/virtual/3.0/arte/header__full-page.inc"-->`,
           },
         ],
