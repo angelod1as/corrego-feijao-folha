@@ -38,6 +38,7 @@
     "react-dom-fragment": "^0.6.0",
     "react-helmet": "^5.2.1",
     "react-reveal": "^1.2.2",
+    "replace-in-file": "^4.2.0",
     "styled-components": "^4.3.2",
     "styled-normalize": "^8.0.6",
     "styled-reset": "3.0.0",

@@ -9,37 +9,15 @@ import Fragment from 'react-dom-fragment';
 /* eslint react/require-default-props: 0 */
 
 export default function HTML(props) {
-  const serverBeforeHtml = `
-  <!--#set var="section" value="#{section}"-->
-  <!--#set var="section_slug" value="#{section_slug}"-->
-  <!--#set var="special" value="#{special}"-->
-  <!--#set var="special_url" value="#{special_url}"-->
-  <!--#set var="show_ads" value="true"-->
-  <!--#set var="show_header_folha" value="true"-->
-  <!--#set var="show_header_news" value="false"-->
-  <!--#set var="show_title_header" value="false"-->
-  <!--#include virtual="/virtual/3.0/arte/script-app.inc"-->
-  `;
-  const serverInsideHead = `<!--#include virtual='/virtual/3.0/arte/head__full-page.inc'-->`;
-  // const serverAfterBody = `<!--#include virtual="/virtual/3.0/arte/header__full-page.inc"-->`;
-  // const serverEndOfBody = `<!--#include virtual="/virtual/3.0/arte/article-graphic__full-page_after.inc"-->`;
   return (
     <>
-      <div
-        dangerouslySetInnerHTML={{
-          __html: serverBeforeHtml,
-        }}
-      />
+      <SSI-before-html />
       <html {...props.htmlAttributes}>
         <head>
           <meta charSet="utf-8" />
           <meta httpEquiv="x-ua-compatible" content="ie=edge" />
           <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-          <div
-            dangerouslySetInnerHTML={{
-              __html: serverInsideHead,
-            }}
-          />
+          <SSI-inside-head />
           {props.headComponents}
         </head>
         <body {...props.bodyAttributes}>
@@ -49,9 +27,9 @@ export default function HTML(props) {
           </noscript>
           <div key="body" id="___gatsby" dangerouslySetInnerHTML={{ __html: props.body }} />
           {props.postBodyComponents}
-          {/* {parse(serverEndOfBody)} */}
+          <SSI-end-of-body />
         </body>
-        {/* {parse(serverAfterBody)} */}
+        <SSI-after-body />
       </html>
     </>
   );

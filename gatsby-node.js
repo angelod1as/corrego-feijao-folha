@@ -1,4 +1,6 @@
 const path = require(`path`);
+const replace = require('replace-in-file');
+
 const { createFilePath } = require(`gatsby-source-filesystem`);
 
 exports.onCreateNode = async ({ node, getNode, actions }) => {
@@ -106,5 +108,41 @@ exports.createPages = async ({ actions, graphql }) => {
         front: false,
       },
     });
+  });
+};
+
+exports.onPostBuild = () => {
+  // Adding SSI comments
+  // defining SSI comments
+  const SSI = {
+    beforeHtml: `
+    <!--#set var="section" value="#{section}"-->
+    <!--#set var="section_slug" value="#{section_slug}"-->
+    <!--#set var="special" value="#{special}"-->
+    <!--#set var="special_url" value="#{special_url}"-->
+    <!--#set var="show_ads" value="true"-->
+    <!--#set var="show_header_folha" value="true"-->
+    <!--#set var="show_header_news" value="false"-->
+    <!--#set var="show_title_header" value="false"-->
+    <!--#include virtual="/virtual/3.0/arte/script-app.inc"-->
+    `,
+    insideHead: `<!--#include virtual='/virtual/3.0/arte/head__full-page.inc'-->`,
+    endOfBody: `<!--#include virtual="/virtual/3.0/arte/article-graphic__full-page_after.inc"-->`,
+    afterBody: `<!--#include virtual="/virtual/3.0/arte/header__full-page.inc"-->`,
+  };
+
+  // defining regexes
+  const exp = {
+    beforeHtml: /<SSI-before-html>(.*?)<\/SSI-before-html>/g,
+    insideHead: /<SSI-inside-head>(.*?)<\/SSI-inside-head>/g,
+    endOfBody: /<SSI-end-of-body>(.*?)<\/SSI-end-of-body>/g,
+    afterBody: /<SSI-after-body>(.*?)<\/SSI-after-body>/g,
+  };
+
+  // replacing
+  replace.sync({
+    files: ['./public/**/*.html', './public/*.html'],
+    from: [exp.beforeHtml, exp.insideHead, exp.afterBody, exp.endOfBody],
+    to: [SSI.beforeHtml, SSI.insideHead, SSI.afterBody, SSI.endOfBody],
   });
 };
