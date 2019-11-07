@@ -1,0 +1,14 @@
+{
+  "version": "0.1",
+  "keywords": [
+    "html",
+    "comments",
+    "ssi",
+    "includes",
+    "gatsby",
+    "gatsby-plugin"
+  ],
+  "dependencies": {
+    "replace-in-file": "^4.2.0"
+  }
+}

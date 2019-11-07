@@ -11,13 +11,13 @@ import Fragment from 'react-dom-fragment';
 export default function HTML(props) {
   return (
     <>
-      <SSI-before-html />
+      <ssi-before-html />
       <html {...props.htmlAttributes}>
         <head>
           <meta charSet="utf-8" />
           <meta httpEquiv="x-ua-compatible" content="ie=edge" />
           <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-          <SSI-inside-head />
+          <ssi-inside-head />
           {props.headComponents}
         </head>
         <body {...props.bodyAttributes}>
@@ -27,9 +27,9 @@ export default function HTML(props) {
           </noscript>
           <div key="body" id="___gatsby" dangerouslySetInnerHTML={{ __html: props.body }} />
           {props.postBodyComponents}
-          <SSI-end-of-body />
+          <ssi-end-of-body />
         </body>
-        <SSI-after-body />
+        <ssi-after-body />
       </html>
     </>
   );
