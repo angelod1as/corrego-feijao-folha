@@ -3,8 +3,8 @@ published: true
 title: Memórias do Feijão
 home: true
 lead: >-
-  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam ratione
-  ducimus porro
+  Depois de 1 ano do rompimento da barragem de Brumadinho, moradores contam
+  histórias e relembram como era o pequeno bairro do Córrego do Feijão.
 names:
   - Gabriel Zambon
   - Tuane Aguiar
