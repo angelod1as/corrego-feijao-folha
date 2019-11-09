@@ -17,7 +17,7 @@ Como uma das primeiras moradoras do então batizado "Córrego do Feijão", ela v
 
 <div class="video" title="Título descritivo do vídeo para acessibilidade" data-video="hKsde78Bwe4"></div>
 
-Era final de tarde, depois do trabalho e no fundo de casa. Dona Cota, filha da Carmem e esposa do [Noé]("/noe"), assistiu às imagens de drone que fizemos e nos mostrou onde e o que eram as áreas destruídas pela lama. Assista:
+Era final de tarde, depois do trabalho e no fundo de casa. Dona Cota, filha da Carmem e esposa do [Noé](https://infinite-hollows-50537.herokuapp.com/noe/), assistiu às imagens de drone que fizemos e nos mostrou onde e o que eram as áreas destruídas pela lama. Assista:
 
 <div class="video" data-size="small" title="Título descritivo do vídeo para acessibilidade" data-video="2mDxhPAGCrA"></div>
 
