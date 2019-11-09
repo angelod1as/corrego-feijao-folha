@@ -12,4 +12,4 @@ A relação de Alcir com o Córrego do Feijão começa de maneira curiosa. Sua m
 
 Cerca de quatro anos depois, Cláudio Pereira da Silva (43), que foi contratado para substituir o Alcir, morreu. O mesmo aconteceu com Levi Gonçalves da Silva (59), esposo da Conceição, que na época era parceiro de trabalho de Alcir. Perguntamos se ele trabalharia na Vale mesmo depois do acontecido e a resposta foi rápida e precisa: Trabalharia, claro. Mas diz que agora, toda vez que olhar para a lama, vai lembrar dos amigos que foram soterrados ali.
 
-<div class="video" title="Título descritivo do vídeo para acessibilidade" data-video="k2Xe8Ruwa9o"></div>
+<div class="video" title="Título descritivo do vídeo para acessibilidade" data-video="MxD9O0iFamg"></div>
