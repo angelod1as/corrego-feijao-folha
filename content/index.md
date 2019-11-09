@@ -1,6 +1,6 @@
 ---
 published: true
-title: Título melhor para SEO
+title: Memórias do Feijão
 home: true
 lead: >-
   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam ratione
