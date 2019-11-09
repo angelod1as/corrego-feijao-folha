@@ -15,8 +15,8 @@ Em 2017, Laissa e seus pais deixaram o Rio de Janeiro e chegaram no Córrego do 
 
 </div>
 
-<div class="video" title="Título descritivo do vídeo para acessibilidade" data-video="c1nzhUX01_4"></div>
+<div class="video" title="Título descritivo do vídeo para acessibilidade" data-video="-7vg5fJsSqk"></div>
 
 Assim como Celso, Vitor também foi criado no Córrego do Feijão. Eles foram colegas de classe na Escola Municipal Nossa Senhora das Dores, mas Vítor não concluiu os estudos. Assista:
 
-<div class="video" data-size="small" title="Título descritivo do vídeo para acessibilidade" data-video="_ETsK3Dp0AQ"></div>
+<div class="video" data-size="small" title="Título descritivo do vídeo para acessibilidade" data-video="Py-bggqpzwI"></div>
