@@ -16,7 +16,6 @@ const Page = ({ content, pages }) => {
 
   return (
     <Main>
-      <Back to="/" />
       <Title className="quote">{parseQuotes(lead)}</Title>
       {/* <Lead>{title}</Lead> */}
       {createdAt || updatedAt ? <Dates>{parseDates(createdAt, updatedAt)}</Dates> : ''}
@@ -24,6 +23,7 @@ const Page = ({ content, pages }) => {
       <div data-paywall-box>
         <Html>{parse(html, parseOptions())}</Html>
       </div>
+      <Back to="/" />
       <Mosaic content={pages} current={title.toLowerCase()} home={false} />
     </Main>
   );
