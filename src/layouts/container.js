@@ -21,8 +21,8 @@ const theme = {
     gradient: '#FFFFFF',
   },
   font: {
-    display: 'Folha Grafico,Helvetica Neue,Helvetica,Arial,sans-serif',
-    text: 'Folha Texto,Georgia,Times New Roman,serif;',
+    display: 'FolhaGrafico,Folha Grafico,Helvetica Neue,Helvetica,Arial,sans-serif',
+    text: 'FolhaTexto, Folha Texto,Georgia,Times New Roman,serif;',
     title: 'FolhaII, Folha II, Georgia, serif',
   },
   width: {

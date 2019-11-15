@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import { Link, withPrefix } from 'gatsby';
 
 const BackLink = styled.div`
+  margin: 15px auto 30px auto;
   a {
     padding: 0 0 0 20px;
     position: relative;
@@ -26,8 +27,8 @@ const BackLink = styled.div`
 const Back = ({ to }) => {
   return (
     <BackLink>
-      <Link direction="right" to={withPrefix(to)}>
-        Córrego do Feijão
+      <Link direction="right" to={to}>
+        Voltar ao início
       </Link>
     </BackLink>
   );

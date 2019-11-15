@@ -1,4 +1,5 @@
 const path = require(`path`);
+
 const { createFilePath } = require(`gatsby-source-filesystem`);
 
 exports.onCreateNode = async ({ node, getNode, actions }) => {

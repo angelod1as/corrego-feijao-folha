@@ -82,5 +82,29 @@ module.exports = {
         icon: `src/images/favicon.png`,
       },
     },
+    {
+      resolve: `gatsby-plugin-html-comments`,
+      options: {
+        files: ['./public/**/*.html', './public/*.html'],
+        comment: [
+          {
+            regexp: /<ssi-before-html>(.*?)<\/ssi-before-html>/g,
+            comment: `<!--#set var="section" value="cotidiano"--><!--#set var="section_slug" value="cotidiano"--><!--#set var="special" value="tragédia em brumadinho"--><!--#set var="special_url" value="#{special_url}"--><!--#set var="show_ads" value="true"--><!--#set var="show_header_folha" value="true"--><!--#set var="show_header_news" value="false"--><!--#set var="show_title_header" value="false"--><!--#include virtual="/virtual/3.0/arte/script-app.inc"-->`,
+          },
+          {
+            regexp: /<ssi-inside-head>(.*?)<\/ssi-inside-head>/g,
+            comment: `<!--#include virtual='/virtual/3.0/arte/head__full-page.inc'-->`,
+          },
+          {
+            regexp: /<ssi-end-of-body>(.*?)<\/ssi-end-of-body>/g,
+            comment: `<!--#include virtual="/virtual/3.0/arte/article-graphic__full-page_after.inc"-->`,
+          },
+          {
+            regexp: /<ssi-header>(.*?)<\/ssi-header>/g,
+            comment: `<!--#include virtual="/virtual/3.0/arte/header__full-page.inc"-->`,
+          },
+        ],
+      },
+    },
   ],
 };
