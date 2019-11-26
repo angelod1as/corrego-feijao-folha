@@ -8,7 +8,7 @@ title: Noé
 lead: '"Por aqui até o ar tá triste, você repara?"'
 order: 2
 ---
-O capixaba Noé Henrique de Oliveira aparece no Córrego do Feijão em 1987. Já trazendo na mala alguns anos de experiência em obras, Noé não teve dificuldade para conseguir emprego. O que ele não imaginava é que seu patrão, Seu Basílio, tinha uma filha por quem  iria se apaixonar e construir família. 
+O capixaba Noé Henrique de Oliveira apareceu no Córrego do Feijão em 1987. Já trazendo na mala alguns anos de experiência em obras, Noé não teve dificuldade para conseguir emprego. 
 
 Em 2015, Noé sofreu um derrame e teve que aposentar sua vida de pedreiro.
 Olhando para o quintal de sua casa ele diz: “ Aqui eu casei, criei meu filhos tudo. E no final da história aqui era um lugar feliz”. Rodrigo, seu terceiro filho, trabalhava para a Vale e na sexta-feira do dia 25 de janeiro ele estava em serviço. Noé ainda não teve coragem de ir olhar a lama de perto.
