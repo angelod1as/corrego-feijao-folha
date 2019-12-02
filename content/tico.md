@@ -1,7 +1,7 @@
 ---
 published: true
 person: true
-updatedAt: 2019-07-06T20:41:34.954Z
+updatedAt:
 createdAt: 2019-07-06T20:41:34.954Z
 opening: ./thumbs/tico.jpg
 title: Tico
@@ -10,7 +10,7 @@ lead: >-
   Nunca mais."
 order: 4
 ---
-Goiano da cidade de Ceres, Tico, como é conhecido entre os moradores, chegou no Córrego do Feijão quando completava 17 anos. Casou, se estabeleceu e, hoje em dia, se considera filho do Córrego do Feijão. Ex-funcionário da Vale desde de 2003, Tico virou membro da associação de Moradores.
+Goiano da cidade de Ceres, **Tico**, como é conhecido entre os moradores, chegou no Córrego do Feijão quando completava 17 anos. Casou, se estabeleceu e, hoje em dia, se considera filho do Córrego do Feijão. Ex-funcionário da Vale desde de 2003, Tico virou membro da associação de Moradores.
 
 <div class="video" title="Título descritivo do vídeo para acessibilidade" data-video="HP8bIefo8_k"></div>
 

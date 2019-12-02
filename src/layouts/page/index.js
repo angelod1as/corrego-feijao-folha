@@ -4,9 +4,10 @@ import parse from 'html-react-parser';
 
 import { parseDates, parseNames, parseOptions, parseQuotes } from '../../components/parser';
 import Mosaic from '../../components/mosaic';
+import SEO from '../../components/seo';
 
 import Back from '../../components/back';
-import { Main, Title, Lead, Dates, Names, Html } from '../../components/styles';
+import { Main, Title, Dates, Names, Html } from '../../components/styles';
 
 const Page = ({ content, pages }) => {
   const {
@@ -14,9 +15,12 @@ const Page = ({ content, pages }) => {
     html,
   } = content;
 
+  const quote = parseQuotes(lead);
+
   return (
     <Main>
-      <Title className="quote">{parseQuotes(lead)}</Title>
+      <SEO title={quote} />
+      <Title className="quote">{quote}</Title>
       {/* <Lead>{title}</Lead> */}
       {createdAt || updatedAt ? <Dates>{parseDates(createdAt, updatedAt)}</Dates> : ''}
       {names && names.length > 0 ? <Names>{parseNames(names)}</Names> : ''}

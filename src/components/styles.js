@@ -9,6 +9,17 @@ export const Main = styled.main`
     margin: 0 auto;
     padding: 0 5px;
   }
+
+  .staff {
+    p,
+    ul,
+    li {
+      padding: 0;
+      strong {
+        font-weight: 800;
+      }
+    }
+  }
 `;
 
 export const Title = styled.h1`
@@ -18,6 +29,10 @@ export const Title = styled.h1`
   margin: 20px auto 30px auto;
   &.quote {
     font-size: 2.5em;
+    text-indent: -0.2em;
+    @media ${bp.adjust} {
+      margin-left: 0.2em;
+    }
   }
   @media ${bp.small} {
     font-size: 4em;

@@ -17,6 +17,18 @@ order: 0
 
 No dia 25 de janeiro de 2019 a barragem de rejeitos 01, da mina córrego do feijão, estourou. A lama tóxica devastou uma área de quase 3 mil quilômetros quadrados, deixando um rastro de 255 mortos identificados, 15 ainda desaparecidos, além de um irreparável dano ao meio ambiente. O distrito do Córrego do Feijão foi um dos bairros atingidos diretamente e contabilizou 25 vítimas fatais identificadas.
 
-Conheça a história de alguns dos moradores do Córrego do Feijão clicando nas fotos abaixo.
+Conheça a história de alguns dos moradores do Córrego do Feijão **clicando nas fotos abaixo**.
 
 <div class="mosaic"></div>
+
+## Expediente
+
+<div class="staff">
+
+**Cargo** nome
+
+**Cargo** nome
+
+**Cargo** nome
+
+</div>

@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import styled, { ThemeProvider } from 'styled-components';
 
 import GlobalStyle from '../components/global-style';
-import SEO from '../components/seo';
 import Footer from '../components/footer';
 
 // import size from '../components/breakpoints';
@@ -47,7 +46,6 @@ const Container = ({ children, seo }) => {
     <ThemeProvider theme={theme}>
       <>
         <GlobalStyle />
-        <SEO title={seo} />
         <Main>{children}</Main>
         <Footer />
       </>

@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 import parse from 'html-react-parser';
 // import styled from 'styled-components';
 
+import SEO from '../../components/seo';
+
 import { parseDates, parseNames, parseOptions } from '../../components/parser';
 import { Main, Title, Lead, Dates, Names, Html, Kicker } from '../../components/styles';
 
@@ -15,7 +17,8 @@ const Front = ({
 }) => {
   return (
     <Main>
-      <Kicker>Córrego do Feijão</Kicker>
+      <SEO title={title} />
+      {/* <Kicker>Córrego do Feijão</Kicker> */}
       <Title>{title}</Title>
       <Lead>{lead}</Lead>
       {createdAt || updatedAt ? <Dates>{parseDates(createdAt, updatedAt)}</Dates> : ''}

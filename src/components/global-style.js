@@ -31,9 +31,12 @@ const GlobalStyle = createGlobalStyle`
     font-size: 20px;
     font-weight: 300;
     line-height: 1.5em;
-    padding: 10px 0;
+    padding: 15px 0;
     margin: 0 auto;
     -webkit-font-smoothing: antialiased
+    & > a {
+      padding: 0;
+    }
   }
 
   h1 {
@@ -77,6 +80,10 @@ const GlobalStyle = createGlobalStyle`
     & > * {
       pointer-events: none;
     }
+  }
+
+  strong {
+    font-weight: 700;
   }
 `;
 

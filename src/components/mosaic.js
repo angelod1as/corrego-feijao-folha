@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import uuid from 'uuid/v1';
 import Fade from 'react-reveal/Fade';
-import { withPrefix, Link } from 'gatsby';
+import { Link } from 'gatsby';
 import bp from './breakpoints';
 
 const Outer = styled.div`
@@ -54,7 +54,6 @@ const Tile = styled.div`
     filter: url("data:image/svg+xml;utf8,&lt;svg xmlns='http://www.w3.org/2000/svg'&gt;&lt;filter id='grayscale'&gt;&lt;feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/&gt;&lt;/filter&gt;&lt;/svg&gt;#grayscale"); /* Firefox 10+, Firefox on Android */
     filter: gray; /* IE6-9 */
     filter: grayscale(100%); /* Chrome 19+, Safari 6+, Safari 6+ iOS */
-    cursor: not-allowed;
   }
 `;
 
@@ -62,15 +61,6 @@ const Thumb = styled.picture`
   img,
   source {
     transition: transform 0.2s;
-  }
-`;
-
-const Name = styled.h2`
-  padding: 0 5px;
-  margin: 0;
-  font-size: 1.5em;
-  @media ${bp.small} {
-    padding: 0;
   }
 `;
 

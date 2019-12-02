@@ -28,7 +28,7 @@ const Back = ({ to }) => {
   return (
     <BackLink>
       <Link direction="right" to={to}>
-        Voltar ao início
+        voltar ao início
       </Link>
     </BackLink>
   );
