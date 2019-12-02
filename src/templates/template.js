@@ -19,7 +19,7 @@ export const query = graphql`
             lead
             names
             createdAt(formatString: "DD.MMM.YYYY - kk:mm", locale: "pt-BR")
-            updatedAt(formatString: "DD.MMM.YYYY - kk:mm", locale: "pt-BR")
+            # updatedAt(formatString: "DD.MMM.YYYY - kk:mm", locale: "pt-BR")
           }
           html
         }
@@ -38,7 +38,7 @@ export const query = graphql`
             lead
             names
             createdAt(formatString: "DD.MMM.YYYY - kk:mm", locale: "pt-BR")
-            updatedAt(formatString: "DD.MMM.YYYY - kk:mm", locale: "pt-BR")
+            # updatedAt(formatString: "DD.MMM.YYYY - kk:mm", locale: "pt-BR")
           }
           html
           fields {

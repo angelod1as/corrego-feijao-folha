@@ -11,11 +11,13 @@ import { Main, Title, Dates, Names, Html } from '../../components/styles';
 
 const Page = ({ content, pages }) => {
   const {
-    frontmatter: { createdAt, updatedAt, title, lead, names },
+    frontmatter: { createdAt, title, lead, names },
     html,
   } = content;
 
   const quote = parseQuotes(lead);
+
+  const updatedAt = null;
 
   return (
     <Main>

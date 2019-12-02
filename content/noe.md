@@ -1,7 +1,7 @@
 ---
 published: true
 person: true
-updatedAt:
+# updatedAt:
 createdAt: 2019-07-06T20:41:34.954Z
 opening: ./thumbs/noe.jpg
 title: Noé

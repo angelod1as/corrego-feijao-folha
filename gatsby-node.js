@@ -38,7 +38,6 @@ exports.createPages = async ({ actions, graphql }) => {
                 lead
                 names
                 createdAt(formatString: "DD.MMM.YYYY - kk:mm", locale: "pt-BR")
-                updatedAt(formatString: "DD.MMM.YYYY - kk:mm", locale: "pt-BR")
               }
               html
             }
@@ -71,7 +70,6 @@ exports.createPages = async ({ actions, graphql }) => {
                 lead
                 names
                 createdAt(formatString: "DD.MMM.YYYY - kk:mm", locale: "pt-BR")
-                updatedAt(formatString: "DD.MMM.YYYY - kk:mm", locale: "pt-BR")
               }
               html
               fields {

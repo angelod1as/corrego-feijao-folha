@@ -10,11 +10,12 @@ import { Main, Title, Lead, Dates, Names, Html, Kicker } from '../../components/
 
 const Front = ({
   content: {
-    frontmatter: { createdAt, lead, names, title, updatedAt },
+    frontmatter: { createdAt, lead, names, title },
     html,
   },
   pages,
 }) => {
+  const updatedAt = null;
   return (
     <Main>
       <SEO title={title} />

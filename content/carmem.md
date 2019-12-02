@@ -1,7 +1,7 @@
 ---
 published: true
 person: true
-updatedAt:
+# updatedAt:
 createdAt: 2019-07-05T20:41:34.954Z
 opening: ./thumbs/carmem.jpg
 title: Carmem

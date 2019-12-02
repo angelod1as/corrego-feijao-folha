@@ -6,10 +6,10 @@ prose:
         field:
           element: hidden
           label: Data de criação
-      - name: updatedAt
-        field:
-          element: hidden
-          label: Data de atualização
+      # - name: updatedAt
+      #   field:
+      #     element: hidden
+      #     label: Data de atualização
       - name: title
         field:
           element: text
