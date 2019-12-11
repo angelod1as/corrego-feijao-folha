@@ -1,7 +1,7 @@
 const path = require(`path`);
 
 module.exports = {
-  pathPrefix: `/teste/angelo/corrego-feijao/`,
+  pathPrefix: `/cotidiano/2020/01/corrego-do-feijao`,
   siteMetadata: {
     title: `Memórias do Feijão`,
     description: `Depois de 1 ano do rompimento da barragem de Brumadinho, moradores contam histórias e relembram como era o pequeno bairro do Córrego do Feijão.`,
