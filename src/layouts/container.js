@@ -110,7 +110,7 @@ const ContainerWrapper = ({ children, seo }) => {
       <>
         <GlobalStyle />
         <Main>{children}</Main>
-        <Footer />
+        {/* <Footer /> */}
       </>
     </Container>
   );

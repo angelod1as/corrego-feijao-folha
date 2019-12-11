@@ -21,7 +21,9 @@ const Front = ({
       <SEO title={title} />
       {/* <Kicker>Córrego do Feijão</Kicker> */}
       <Title>{title}</Title>
-      <Lead>{lead}</Lead>
+      <Lead>
+        <span>{lead}</span>
+      </Lead>
       {createdAt || updatedAt ? <Dates>{parseDates(createdAt, updatedAt)}</Dates> : ''}
       {names && names.length > 0 ? <Names>{parseNames(names)}</Names> : ''}
       <div data-paywall-box>

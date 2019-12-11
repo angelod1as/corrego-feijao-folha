@@ -58,8 +58,13 @@ export const Kicker = styled.p`
 
 export const Lead = styled.p`
   max-width: ${theme.width.width};
-  font-size: 1.5em;
-  margin-bottom: 30px;
+  span {
+    font-size: 24px;
+    margin-bottom: 30px;
+    color: #757575;
+    font-weight: 400;
+    font-family: ${theme.font.display};
+  }
 `;
 
 export const Dates = styled.div`

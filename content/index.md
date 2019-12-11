@@ -8,7 +8,7 @@ lead: >-
 names:
   - Gabriel Zambon
   - Tuane Aguiar
-  - 'desenvolvimento: Angelo Dias'
+  - Angelo Dias
 order: 0
 ---
 <span class="location">Córrego do Feijão (MG)</span>O Córrego do Feijão é um bairro rural do município de Brumadinho, no estado de Minas Gerais. No último censo demográfico (2010), foram contados 415 residentes. Com o mesmo nome do bairro, a empresa Vale S/A detém um complexo de mineração na região.
@@ -17,6 +17,8 @@ order: 0
 
 No dia 25 de janeiro de 2019 a barragem de rejeitos 01, da mina córrego do feijão, estourou. A lama tóxica devastou uma área de quase 3 mil quilômetros quadrados, deixando um rastro de 255 mortos identificados, 15 ainda desaparecidos, além de um irreparável dano ao meio ambiente. O distrito do Córrego do Feijão foi um dos bairros atingidos diretamente e contabilizou 25 vítimas fatais identificadas.
 
+Todos os depoimentos foram colhidos entre os dias 9.abr.2019 e 17.abr.2019.
+
 Conheça a história de alguns dos moradores do Córrego do Feijão **clicando nas fotos abaixo**.
 
 <div class="mosaic"></div>
@@ -24,6 +26,8 @@ Conheça a história de alguns dos moradores do Córrego do Feijão **clicando n
 ## Expediente
 
 <div class="staff">
+
+**Desenvolvimento** Angelo Dias
 
 **Cargo** nome
 
