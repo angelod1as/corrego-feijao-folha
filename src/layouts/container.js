@@ -47,7 +47,7 @@ const Container = styled.div`
 
   h1 {
     font-family: ${theme.font.title};
-    font-weight: 800;
+    font-weight: 500;
   }
 
   img,
