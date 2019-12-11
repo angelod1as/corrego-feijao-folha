@@ -29,9 +29,10 @@ export const Title = styled.h1`
   margin: 20px auto 30px auto;
   &.quote {
     font-size: 2.5em;
-    text-indent: -0.2em;
-    @media ${bp.adjust} {
-      margin-left: 0.2em;
+    /* margin-left: 0.2em; */
+    text-indent: 0;
+    @media ${bp.width} {
+      text-indent: -0.4em;
     }
   }
   @media ${bp.small} {
