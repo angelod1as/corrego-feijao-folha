@@ -6,15 +6,16 @@ import Fade from 'react-reveal/Fade';
 import { Link } from 'gatsby';
 import bp from './breakpoints';
 
+import theme from './theme';
+
 const Outer = styled.div`
+  max-width: ${theme.width.width};
   &.home {
-    max-width: ${p => p.theme.width.max} !important;
+    max-width: ${theme.width.max} !important;
     margin: 50px auto !important;
     @media ${bp.small} {
       margin: 100px auto !important;
     }
-  }
-  &.page {
   }
   padding: 0;
 `;
@@ -25,6 +26,7 @@ const Inner = styled.div`
   @media ${bp.small} {
     display: grid;
     grid-gap: 10px;
+    // grid-row-gap: 10px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     transition: transform 1s;
@@ -50,6 +52,7 @@ const Inner = styled.div`
 const Tile = styled.div`
   width: 100%;
   height: auto;
+  position: relative;
   &.disabled {
     filter: url("data:image/svg+xml;utf8,&lt;svg xmlns='http://www.w3.org/2000/svg'&gt;&lt;filter id='grayscale'&gt;&lt;feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/&gt;&lt;/filter&gt;&lt;/svg&gt;#grayscale"); /* Firefox 10+, Firefox on Android */
     filter: gray; /* IE6-9 */
@@ -74,6 +77,23 @@ const Recommended = styled.h2`
   }
 `;
 
+const Name = styled.span`
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  line-height: 1em;
+  padding: 0 5px;
+  margin: 0;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-family: ${theme.font.display};
+  color: white;
+  font-weight: 600;
+  @media ${bp.small} {
+    padding: 0;
+  }
+`;
+
 const Mosaic = ({ content, home, current }) => {
   const inner = content.map(each => {
     const {
@@ -91,7 +111,7 @@ const Mosaic = ({ content, home, current }) => {
         <Thumb>
           <img src={jpgImage} alt="" />
         </Thumb>
-        {/* <Name>{title}</Name> */}
+        <Name>{title}</Name>
       </Tile>
     );
 

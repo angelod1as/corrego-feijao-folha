@@ -3,7 +3,10 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { Link, withPrefix } from 'gatsby';
 
+import theme from './theme';
+
 const BackLink = styled.div`
+  max-width: ${theme.width.width};
   margin: 15px auto 30px auto;
   a {
     padding: 0 0 0 20px;

@@ -4,6 +4,8 @@ import PropTypes from 'prop-types';
 
 import sizes from './breakpoints';
 
+import theme from './theme';
+
 const Video = ({ id, title, size }) => {
   const options = '';
 
@@ -15,7 +17,7 @@ const Video = ({ id, title, size }) => {
     max-height: 600px;
 
     &.small {
-      max-width: ${p => p.theme.width.width};
+      max-width: ${theme.width.width};
     }
 
     @media ${sizes.medium} {

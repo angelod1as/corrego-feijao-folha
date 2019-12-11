@@ -2,13 +2,15 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
+import theme from './theme';
+
 const Fig = styled.figure`
   figcaption {
-    font-family: ${p => p.theme.font.display};
+    font-family: ${theme.font.display};
     font-weight: 400;
     font-size: 0.95em;
     span {
-      color: ${p => p.theme.color.darkgray};
+      color: ${theme.color.darkgray};
     }
   }
 `;

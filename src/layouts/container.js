@@ -7,55 +7,118 @@ import Footer from '../components/footer';
 
 // import size from '../components/breakpoints';
 
-const theme = {
-  color: {
-    color: '#b33c00',
-    white: '#333333',
-    black: '#F4F4F4',
-    lightgray: '#F4F4F4',
-    gray: '#CCCCCC',
-    darkgray: '#A9A9A9',
-    darkergray: '#707070',
-    bg: '#140000',
-    gradient: '#FFFFFF',
-  },
-  font: {
-    display: 'FolhaGrafico,Folha Grafico,Helvetica Neue,Helvetica,Arial,sans-serif',
-    text: 'FolhaTexto, Folha Texto,Georgia,Times New Roman,serif;',
-    title: 'FolhaII, Folha II, Georgia, serif',
-  },
-  width: {
-    full: '100%',
-    max: '1000px',
-    width: '630px',
-  },
-};
+import theme from '../components/theme';
+
+const Container = styled.div`
+  body {
+    font-family: ${theme.font.text};
+    -webkit-font-smoothing: antialiased;
+    /* font-family: Folha Grafico,Helvetica,Arial,sans-serif */
+  }
+
+  * {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  p,
+  a,
+  li,
+  h1,
+  h2,
+  h3,
+  h4,
+  figcaption {
+    font-family: ${theme.font.text};
+    font-size: 20px;
+    font-weight: 300;
+    padding: 15px 0;
+    margin: 0 auto;
+    -webkit-font-smoothing: antialiased & > a {
+      padding: 0;
+    }
+  }
+
+  p,
+  a,
+  li {
+    line-height: 1.5em;
+  }
+
+  h1 {
+    font-family: ${theme.font.title};
+    font-weight: 800;
+  }
+
+  img,
+  figure {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  h1 {
+    font-size: 4em;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+
+  a {
+    cursor: pointer;
+    display: inline-block;
+    color: ${theme.color.color};
+    transition: color 0.2s, transform 0.2s;
+    text-decoration: none;
+    &:hover {
+      color: ${theme.color.white};
+    }
+  }
+  &.bg {
+    color: ${theme.color.white};
+    &:hover {
+      color: ${theme.color.color};
+    }
+  }
+
+  svg {
+    pointer-events: none;
+    & > * {
+      pointer-events: none;
+    }
+  }
+
+  strong {
+    font-weight: 700;
+  }
+`;
 
 const Main = styled.div`
   background: #191919; /* Old browsers */
-  background: ${p => p.theme.color.gradient};
-  color: ${p => p.theme.color.white};
+  background: ${theme.color.gradient};
+  color: ${theme.color.white};
   height: auto;
   min-height: 100%;
 
   padding: 50px 0;
 `;
 
-const Container = ({ children, seo }) => {
+const ContainerWrapper = ({ children, seo }) => {
   return (
-    <ThemeProvider theme={theme}>
+    <Container theme={theme}>
       <>
         <GlobalStyle />
         <Main>{children}</Main>
         <Footer />
       </>
-    </ThemeProvider>
+    </Container>
   );
 };
 
-Container.propTypes = {
+ContainerWrapper.propTypes = {
   children: PropTypes.element.isRequired,
   seo: PropTypes.string.isRequired,
 };
 
-export default Container;
+export default ContainerWrapper;
