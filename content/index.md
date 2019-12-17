@@ -29,10 +29,8 @@ Conheça a história de alguns dos moradores do Córrego do Feijão **clicando n
 
 **Desenvolvimento** Angelo Dias
 
-**Cargo** nome
+**Conteúdo** Gabriel Zambon
 
-**Cargo** nome
-
-**Cargo** nome
+**Conteúdo** Tuane Fernandes
 
 </div>
